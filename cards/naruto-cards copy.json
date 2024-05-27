@@ -1,0 +1,1860 @@
+{
+	"$schema": "./schema.json",
+	"id": "naruto-cards",
+	"name": "Naruto Cards",
+	"cards": [
+		{
+			"name": "Ten-Tails",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e6/Ten-Tails_emerges.png",
+			"id": 1
+		},
+		{ "name": "A (First Raikage)", "image": "https://static.wikia.nocookie.net/naruto/images/7/70/A.png", "id": 3 },
+		{
+			"name": "A (Second Raikage)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/3f/2nd_Raikage.png",
+			"id": 4
+		},
+		{
+			"name": "A (Third Raikage)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f5/Raikage3.png",
+			"id": 5
+		},
+		{
+			"name": "A (Fourth Raikage)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4c/Fourth_Raikage_2.png",
+			"id": 6
+		},
+		{ "name": "Abiru", "image": "https://static.wikia.nocookie.net/naruto/images/7/72/Abiru_new.png", "id": 7 },
+		{
+			"name": "Zaku Abumi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/40/Zaku_Abumi.png",
+			"id": 8
+		},
+		{
+			"name": "Muta Aburame",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/1f/Aburame_Muta.png",
+			"id": 10
+		},
+		{
+			"name": "Shibi Aburame",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/b3/Shibi.png",
+			"id": 11
+		},
+		{
+			"name": "Shino Aburame",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Shino.png",
+			"id": 13
+		},
+		{
+			"name": "Tatsuma Aburame",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/bb/Tatsuma_Aburame.png",
+			"id": 14
+		},
+		{
+			"name": "Torune Aburame",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/35/Torune_Anime.png",
+			"id": 15
+		},
+		{
+			"name": "Ada",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f6/Ada_Infobox_Image.png",
+			"id": 17
+		},
+		{ "name": "Agara", "image": "https://static.wikia.nocookie.net/naruto/images/7/71/Agara.png", "id": 18 },
+		{ "name": "Agari", "image": "https://static.wikia.nocookie.net/naruto/images/5/5c/Agari.png", "id": 19 },
+		{ "name": "Ageha", "image": "https://static.wikia.nocookie.net/naruto/images/4/4b/Ageha.png", "id": 20 },
+		{ "name": "Ahiko", "image": "https://static.wikia.nocookie.net/naruto/images/7/7c/Ahiko.png", "id": 21 },
+		{ "name": "Ajisai", "image": "https://static.wikia.nocookie.net/naruto/images/4/40/Ajisai.png", "id": 24 },
+		{
+			"name": "Manabu Akado",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/bc/Manabu_Akado.png",
+			"id": 26
+		},
+		{
+			"name": "Yoroi Akadō",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/40/Yoroi_Akad%C5%8D.png",
+			"id": 27
+		},
+		{ "name": "Akamaru", "image": "https://static.wikia.nocookie.net/naruto/images/0/09/Akamaru_p1.png", "id": 29 },
+		{
+			"name": "Iwana Akame",
+			"image": "https://static.wikia.nocookie.net/naruto/images/a/a6/Iwana_Akame.png",
+			"id": 30
+		},
+		{ "name": "Akane", "image": "https://static.wikia.nocookie.net/naruto/images/a/aa/Akane.png", "id": 31 },
+		{
+			"name": "Akatsuchi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/16/Akatsuchi_Part_II.png",
+			"id": 35
+		},
+		{
+			"name": "Jinin Akebino",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/25/Jinin.png",
+			"id": 36
+		},
+		{
+			"name": "Chōchō Akimichi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/08/Ch%C5%8Dch%C5%8D_Akimichi.png",
+			"id": 39
+		},
+		{
+			"name": "Chōji Akimichi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/7d/Ch%C5%8Dji_Akimichi.png",
+			"id": 40
+		},
+		{
+			"name": "Chōza Akimichi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/a/a8/Ch%C5%8Dza_Akimichi.png",
+			"id": 42
+		},
+		{
+			"name": "Dōtō Akimichi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/07/D%C5%8Dt%C5%8D_Akimichi.png",
+			"id": 43
+		},
+		{
+			"name": "Makaro Akimichi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4f/Makaro_Akimichi.png",
+			"id": 44
+		},
+		{
+			"name": "Maruten Akimichi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/5a/Maruten_Akimichi.png",
+			"id": 45
+		},
+		{
+			"name": "Shitō Akimichi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/04/Shit%C5%8D_Akimichi.png",
+			"id": 46
+		},
+		{
+			"name": "Torifu Akimichi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/0a/Torifu_Akimichi.png",
+			"id": 47
+		},
+		{ "name": "Akino", "image": "https://static.wikia.nocookie.net/naruto/images/7/7b/Akino2.png", "id": 48 },
+		{ "name": "Ami", "image": "https://static.wikia.nocookie.net/naruto/images/d/dd/Ami.png", "id": 64 },
+		{
+			"name": "First Animal Path (character)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/cd/Animal_Path.png",
+			"id": 78
+		},
+		{ "name": "Ao", "image": "https://static.wikia.nocookie.net/naruto/images/7/72/Ao.png", "id": 80 },
+		{ "name": "Aoda", "image": "https://static.wikia.nocookie.net/naruto/images/9/99/Aoda.png", "id": 81 },
+		{ "name": "Araya", "image": "https://static.wikia.nocookie.net/naruto/images/1/1e/Araya.png", "id": 88 },
+		{ "name": "Armadiko", "image": "https://static.wikia.nocookie.net/naruto/images/3/30/Armadiko.png", "id": 89 },
+		{
+			"name": "Asura Path (character)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/c5/Asura_Path.png",
+			"id": 99
+		},
+		{ "name": "Atsui", "image": "https://static.wikia.nocookie.net/naruto/images/0/0f/Atsui.png", "id": 100 },
+		{ "name": "Ayame", "image": "https://static.wikia.nocookie.net/naruto/images/4/4f/Ayame.png", "id": 101 },
+		{
+			"name": "Shibito Azuma",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/02/Shibito_Azuma.png",
+			"id": 103
+		},
+		{ "name": "Baiu", "image": "https://static.wikia.nocookie.net/naruto/images/c/c8/Baiu.png", "id": 105 },
+		{ "name": "Baki", "image": "https://static.wikia.nocookie.net/naruto/images/0/04/Baki_Infobox.png", "id": 107 },
+		{ "name": "Baku", "image": "https://static.wikia.nocookie.net/naruto/images/7/77/Baku_Anime.png", "id": 108 },
+		{
+			"name": "Baku (Anbu)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4e/Baku_ANBU.png",
+			"id": 109
+		},
+		{ "name": "Bakuto", "image": "https://static.wikia.nocookie.net/naruto/images/2/2c/Bakuto.png", "id": 110 },
+		{ "name": "Bansai", "image": "https://static.wikia.nocookie.net/naruto/images/b/b8/Bansai.png", "id": 115 },
+		{ "name": "Bekkō", "image": "https://static.wikia.nocookie.net/naruto/images/f/f6/Bekko.png", "id": 118 },
+		{ "name": "Bisuke", "image": "https://static.wikia.nocookie.net/naruto/images/2/23/Biscuit.png", "id": 121 },
+		{
+			"name": "Jūzō Biwa",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/c2/J%C5%ABz%C5%8D_Biwa.png",
+			"id": 122
+		},
+		{ "name": "Blue B", "image": "https://static.wikia.nocookie.net/naruto/images/b/bd/Blue_B.png", "id": 124 },
+		{ "name": "Boro", "image": "https://static.wikia.nocookie.net/naruto/images/6/63/Boro.png", "id": 125 },
+		{ "name": "Bug", "image": "https://static.wikia.nocookie.net/naruto/images/7/7d/Bug.png", "id": 128 },
+		{ "name": "Bull", "image": "https://static.wikia.nocookie.net/naruto/images/7/7a/Bull.png", "id": 129 },
+		{ "name": "Buna", "image": "https://static.wikia.nocookie.net/naruto/images/b/b0/Buna.png", "id": 130 },
+		{
+			"name": "Bunpuku",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/5e/Bunpuku_anime.png",
+			"id": 131
+		},
+		{ "name": "Byakuren", "image": "https://static.wikia.nocookie.net/naruto/images/2/27/Byakuren.png", "id": 134 },
+		{ "name": "C", "image": "https://static.wikia.nocookie.net/naruto/images/7/7a/Shee.png", "id": 135 },
+		{
+			"name": "Gyokurō Chabashira",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e4/Gyokur%C5%8D_Chabashira_Anime.png",
+			"id": 137
+		},
+		{ "name": "Chamaru", "image": "https://static.wikia.nocookie.net/naruto/images/4/4e/Chamaru.png", "id": 138 },
+		{ "name": "Chibi", "image": "https://static.wikia.nocookie.net/naruto/images/d/d2/Chibi.png", "id": 141 },
+		{
+			"name": "Monzaemon Chikamatsu",
+			"image": "https://static.wikia.nocookie.net/naruto/images/a/a9/Monzaemon_Symbol.svg/revision/latest?cb=20090510230648",
+			"id": 143
+		},
+		{ "name": "Chiriku", "image": "https://static.wikia.nocookie.net/naruto/images/5/5d/Chiriku.png", "id": 146 },
+		{
+			"name": "Chiyomatsu",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/9a/Chiyomatsu.png",
+			"id": 150
+		},
+		{
+			"name": "Chōhan",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/cc/Ch%C5%8Dhan.png",
+			"id": 151
+		},
+		{ "name": "Chōjūrō", "image": "https://static.wikia.nocookie.net/naruto/images/d/d8/Chojuro_2.png", "id": 152 },
+		{ "name": "Chōmei", "image": "https://static.wikia.nocookie.net/naruto/images/7/78/Chomei.png", "id": 153 },
+		{
+			"name": "Chōseki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/2c/Ch%C5%8Dseki.png",
+			"id": 154
+		},
+		{
+			"name": "Chūkichi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/19/Ch%C5%ABkichi_mugshot.png",
+			"id": 157
+		},
+		{ "name": "Code", "image": "https://static.wikia.nocookie.net/naruto/images/3/38/Code.png", "id": 159 },
+		{
+			"name": "Daemon",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/25/Daemon_infobox.png",
+			"id": 165
+		},
+		{ "name": "Daichi", "image": "https://static.wikia.nocookie.net/naruto/images/0/07/Daichi.png", "id": 167 },
+		{
+			"name": "Earth Daimyō",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/6f/Tsuchi_Daimyo.png",
+			"id": 173
+		},
+		{
+			"name": "Fire Daimyō (Part I-II)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d6/Fire_Daimy%C5%8D.png",
+			"id": 175
+		},
+		{
+			"name": "Frost Daimyō",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/81/Land_of_Frost_Daimyo.png",
+			"id": 176
+		},
+		{
+			"name": "Hot Water Daimyō",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/b0/Hot_water_daimyo.png",
+			"id": 177
+		},
+		{
+			"name": "Lightning Daimyō",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/9b/Lightning_daimyo.png",
+			"id": 178
+		},
+		{
+			"name": "Water Daimyō",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/1f/Mizu_Daimyo.png",
+			"id": 184
+		},
+		{
+			"name": "Wind Daimyō (Part I)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/52/Wind_Daimy%C5%8D_%28Part_I%29.png",
+			"id": 185
+		},
+		{
+			"name": "Wind Daimyō (Part II)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/6d/New_Wind_Daimyo.png",
+			"id": 186
+		},
+		{ "name": "Dangō", "image": "https://static.wikia.nocookie.net/naruto/images/b/bf/Dango_Fire.png", "id": 188 },
+		{ "name": "Darui", "image": "https://static.wikia.nocookie.net/naruto/images/4/45/Darui.png", "id": 190 },
+		{ "name": "Deidara", "image": "https://static.wikia.nocookie.net/naruto/images/0/06/Deidara.png", "id": 193 },
+		{
+			"name": "Delta",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/7c/Delta_Infobox.png",
+			"id": 194
+		},
+		{
+			"name": "Demonic Statue of the Outer Path",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/fe/Gedo_Mazo.png",
+			"id": 195
+		},
+		{ "name": "Dengaku", "image": "https://static.wikia.nocookie.net/naruto/images/f/f6/Dengaku.png", "id": 196 },
+		{ "name": "Denka", "image": "https://static.wikia.nocookie.net/naruto/images/1/13/Denka.png", "id": 197 },
+		{
+			"name": "Dodai",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/92/Dodai_HDshot.png",
+			"id": 199
+		},
+		{ "name": "Doki", "image": "https://static.wikia.nocookie.net/naruto/images/2/2c/Doki.png", "id": 201 },
+		{
+			"name": "Mawashi Dokuraku",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d5/Mawashi_Dokuraku.png",
+			"id": 203
+		},
+		{
+			"name": "Might Duy",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/b7/Might_Duy.png",
+			"id": 210
+		},
+		{ "name": "Ebisu", "image": "https://static.wikia.nocookie.net/naruto/images/7/77/Ebisu.png", "id": 212 },
+		{ "name": "Ebizō", "image": "https://static.wikia.nocookie.net/naruto/images/0/02/Ebiz%C5%8D.png", "id": 213 },
+		{ "name": "Emi", "image": "https://static.wikia.nocookie.net/naruto/images/a/a1/Emi.png", "id": 214 },
+		{ "name": "Emiru", "image": "https://static.wikia.nocookie.net/naruto/images/7/74/Emiru.png", "id": 216 },
+		{ "name": "F", "image": "https://static.wikia.nocookie.net/naruto/images/b/be/F_HDShot.png", "id": 219 },
+		{ "name": "Fū", "image": "https://static.wikia.nocookie.net/naruto/images/f/f6/Fu.png", "id": 221 },
+		{ "name": "Fukasaku", "image": "https://static.wikia.nocookie.net/naruto/images/f/fc/Fukusaku.png", "id": 230 },
+		{ "name": "Fuki", "image": "https://static.wikia.nocookie.net/naruto/images/f/f7/Fuki.png", "id": 231 },
+		{ "name": "Fukuemon", "image": "https://static.wikia.nocookie.net/naruto/images/b/b5/Fukuemon.png", "id": 235 },
+		{ "name": "Funari", "image": "https://static.wikia.nocookie.net/naruto/images/8/85/Funari.png", "id": 241 },
+		{ "name": "Fundaru", "image": "https://static.wikia.nocookie.net/naruto/images/e/e3/Fundaru.png", "id": 248 },
+		{
+			"name": "Daikoku Funeno",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/75/Daikoku_Funeno.png",
+			"id": 249
+		},
+		{ "name": "Furui", "image": "https://static.wikia.nocookie.net/naruto/images/9/96/Furui.png", "id": 251 },
+		{ "name": "Fusō", "image": "https://static.wikia.nocookie.net/naruto/images/0/03/Fus%C5%8D.png", "id": 252 },
+		{ "name": "Futaba", "image": "https://static.wikia.nocookie.net/naruto/images/4/44/Futaba.png", "id": 253 },
+		{
+			"name": "Gaara",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/20/Gaara_in_Part_I.png",
+			"id": 259
+		},
+		{ "name": "Gama", "image": "https://static.wikia.nocookie.net/naruto/images/9/9f/Gama.png", "id": 260 },
+		{
+			"name": "Gamabunta",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f6/Gamabunta2.png",
+			"id": 261
+		},
+		{ "name": "Gamaden", "image": "https://static.wikia.nocookie.net/naruto/images/b/b0/Gamaden.png", "id": 262 },
+		{ "name": "Gamahiro", "image": "https://static.wikia.nocookie.net/naruto/images/e/e6/Gamahiro.png", "id": 264 },
+		{ "name": "Gamaken", "image": "https://static.wikia.nocookie.net/naruto/images/9/98/Gamaken.png", "id": 265 },
+		{
+			"name": "Gamakichi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e1/Gamakichi.png",
+			"id": 266
+		},
+		{
+			"name": "Gamamaru",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/76/Gamamaru_infobox.png",
+			"id": 267
+		},
+		{ "name": "Gamatama", "image": "https://static.wikia.nocookie.net/naruto/images/0/08/Gamatama.png", "id": 270 },
+		{
+			"name": "Gamatatsu",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/81/Gamatatsu.png",
+			"id": 271
+		},
+		{ "name": "Ganno", "image": "https://static.wikia.nocookie.net/naruto/images/d/de/Ganno_anime.png", "id": 275 },
+		{
+			"name": "Gantetsu (Iwagakure)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/bd/Gantetsu_Iwa.png",
+			"id": 279
+		},
+		{ "name": "Gari", "image": "https://static.wikia.nocookie.net/naruto/images/0/03/Gari_Anime.png", "id": 282 },
+		{ "name": "Garō", "image": "https://static.wikia.nocookie.net/naruto/images/0/07/Gar%C5%8D.png", "id": 283 },
+		{
+			"name": "Garuda",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e6/Garuda_Summoned.png",
+			"id": 284
+		},
+		{ "name": "Gatō", "image": "https://static.wikia.nocookie.net/naruto/images/d/d8/Gato.png", "id": 289 },
+		{ "name": "Gazeru", "image": "https://static.wikia.nocookie.net/naruto/images/c/ce/Gazeru.png", "id": 291 },
+		{
+			"name": "Hayate Gekkō",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/3a/Hayate_Gekk%C5%8D.png",
+			"id": 293
+		},
+		{
+			"name": "Genbu",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/69/Island_Turtle.png",
+			"id": 295
+		},
+		{ "name": "Genji", "image": "https://static.wikia.nocookie.net/naruto/images/e/e9/Kiri_Elder.png", "id": 299 },
+		{ "name": "Gennai", "image": "https://static.wikia.nocookie.net/naruto/images/0/0c/Gennai3.png", "id": 301 },
+		{
+			"name": "Gen'yūmaru",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/22/Gen%27y%C5%ABmaru.png",
+			"id": 304
+		},
+		{ "name": "Genzō", "image": "https://static.wikia.nocookie.net/naruto/images/e/ec/Genzo.png", "id": 305 },
+		{ "name": "Gerotora", "image": "https://static.wikia.nocookie.net/naruto/images/f/fa/Gamatora.png", "id": 306 },
+		{
+			"name": "Giant Clam",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/31/Ohamaguri.png",
+			"id": 310
+		},
+		{
+			"name": "Giant Multi-Headed Dog",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/5a/Multi_headed_dog2.png",
+			"id": 317
+		},
+		{ "name": "Giichi", "image": "https://static.wikia.nocookie.net/naruto/images/1/14/Giichi2.png", "id": 324 },
+		{ "name": "Ginji", "image": "https://static.wikia.nocookie.net/naruto/images/5/52/Ginji.png", "id": 325 },
+		{
+			"name": "Ginkaku",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/03/Ginkaku_268.png",
+			"id": 326
+		},
+		{
+			"name": "Dōshu Goetsu",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/14/Doshu.png",
+			"id": 328
+		},
+		{ "name": "Gonbee", "image": "https://static.wikia.nocookie.net/naruto/images/0/06/Gonbee.png", "id": 332 },
+		{ "name": "Goshiki", "image": "https://static.wikia.nocookie.net/naruto/images/7/71/Goshiki.png", "id": 333 },
+		{ "name": "Gōza", "image": "https://static.wikia.nocookie.net/naruto/images/e/e0/Goza.png", "id": 337 },
+		{
+			"name": "Gōzu",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/7b/Gozu_profile_pic.png",
+			"id": 338
+		},
+		{
+			"name": "Guren (prisoner)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/0a/Guren_%28prisoner%29.png",
+			"id": 342
+		},
+		{
+			"name": "Guruko",
+			"image": "https://static.wikia.nocookie.net/naruto/images/a/a5/Guruko_ninken.png",
+			"id": 343
+		},
+		{
+			"name": "Might Guy",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/31/Might_Guy.png",
+			"id": 344
+		},
+		{ "name": "Gyūki", "image": "https://static.wikia.nocookie.net/naruto/images/d/d7/Gyuki.png", "id": 345 },
+		{
+			"name": "Kotetsu Hagane",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/81/Kotetsu_Hagane.png",
+			"id": 348
+		},
+		{
+			"name": "Three Haimaru Brothers",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/2c/Haimaru_brothers.png",
+			"id": 353
+		},
+		{ "name": "Haku", "image": "https://static.wikia.nocookie.net/naruto/images/9/90/Haku.png", "id": 356 },
+		{
+			"name": "Hakui (medic)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/59/Hakui_medic.png",
+			"id": 361
+		},
+		{ "name": "Han", "image": "https://static.wikia.nocookie.net/naruto/images/3/3c/Han.png", "id": 363 },
+		{ "name": "Hanzō", "image": "https://static.wikia.nocookie.net/naruto/images/7/7a/Hanz%C5%8D.png", "id": 368 },
+		{ "name": "Harine", "image": "https://static.wikia.nocookie.net/naruto/images/e/e2/Harine.png", "id": 370 },
+		{
+			"name": "Sakura Haruno",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/64/Sakura_Part_1.png",
+			"id": 374
+		},
+		{
+			"name": "Kakashi Hatake",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/27/Kakashi_Hatake.png",
+			"id": 376
+		},
+		{
+			"name": "Sakumo Hatake",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/3f/Sakumo_Hatake.png",
+			"id": 377
+		},
+		{ "name": "Hayase", "image": "https://static.wikia.nocookie.net/naruto/images/0/0e/Hayase.png", "id": 379 },
+		{ "name": "Heki", "image": "https://static.wikia.nocookie.net/naruto/images/a/ab/Heki.png", "id": 384 },
+		{ "name": "Hibari", "image": "https://static.wikia.nocookie.net/naruto/images/1/1f/Hibari.png", "id": 386 },
+		{ "name": "Hidan", "image": "https://static.wikia.nocookie.net/naruto/images/e/e3/Hidan.png", "id": 388 },
+		{
+			"name": "Shimon Hijiri",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/1d/Shimon_hijiri.png",
+			"id": 391
+		},
+		{ "name": "Hikaru", "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Hikaru.png", "id": 392 },
+		{ "name": "Hina", "image": "https://static.wikia.nocookie.net/naruto/images/8/83/Hina.png", "id": 398 },
+		{
+			"name": "Hōki (Takigakure)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/7c/H%C5%8Dki.png",
+			"id": 416
+		},
+		{
+			"name": "Hōsei",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/0a/H%C5%8Dsei.JPG/revision/latest?cb=20150807085240",
+			"id": 420
+		},
+		{
+			"name": "Kisame Hoshigaki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/25/Kisame.png",
+			"id": 421
+		},
+		{
+			"name": "Hōshō",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/3c/H%C5%8Dsh%C5%8D.png",
+			"id": 425
+		},
+		{
+			"name": "Gengetsu Hōzuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/9f/Gengetsu_H%C5%8Dzuki.png",
+			"id": 428
+		},
+		{
+			"name": "Mangetsu Hōzuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/ce/Hozuki_Mangetsu.png",
+			"id": 429
+		},
+		{
+			"name": "Suigetsu Hōzuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/3e/Suigetsu_H%C5%8Dzuki.png",
+			"id": 430
+		},
+		{
+			"name": "Human Path (character)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/a/a3/Human_Pain.png",
+			"id": 431
+		},
+		{ "name": "Hyō", "image": "https://static.wikia.nocookie.net/naruto/images/9/99/Hy%C5%8D.png", "id": 432 },
+		{
+			"name": "Hyūga Elder",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/25/Hy%C5%ABga_Elder.png",
+			"id": 434
+		},
+		{
+			"name": "Hanabi Hyūga",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/da/Hanabi_Hyuga.png",
+			"id": 435
+		},
+		{
+			"name": "Hiashi Hyūga",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/ee/Hiashi_Hyuga.png",
+			"id": 436
+		},
+		{
+			"name": "Hinata Hyūga",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/97/Hinata.png",
+			"id": 437
+		},
+		{
+			"name": "Hizashi Hyūga",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/15/Young_Hizashi.png",
+			"id": 439
+		},
+		{
+			"name": "Hoheto Hyūga",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/c4/Hoheto.png",
+			"id": 440
+		},
+		{
+			"name": "Iroha Hyūga",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/98/Iroha_Hyuga.png",
+			"id": 441
+		},
+		{ "name": "Kō Hyūga", "image": "https://static.wikia.nocookie.net/naruto/images/5/5a/K%C5%8D.png", "id": 442 },
+		{
+			"name": "Neji Hyūga",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/7e/Neji_Part_I.png",
+			"id": 444
+		},
+		{
+			"name": "Tokuma Hyūga",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d4/Tokuma_Hy%C5%ABga.png",
+			"id": 445
+		},
+		{ "name": "Ibara", "image": "https://static.wikia.nocookie.net/naruto/images/2/23/Ibara.png", "id": 447 },
+		{
+			"name": "Ibuse",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/0d/Hanzo_and_The_Salamander.png",
+			"id": 448
+		},
+		{ "name": "Ichigen", "image": "https://static.wikia.nocookie.net/naruto/images/5/51/Ichigen.jpg", "id": 451 },
+		{ "name": "Inaho", "image": "https://static.wikia.nocookie.net/naruto/images/7/70/Inaho3.png", "id": 457 },
+		{ "name": "Inari", "image": "https://static.wikia.nocookie.net/naruto/images/0/0e/Inari.png", "id": 458 },
+		{ "name": "Inomatsu", "image": "https://static.wikia.nocookie.net/naruto/images/c/c5/Inomatsu.jpg", "id": 460 },
+		{
+			"name": "Akita Inuzuka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/fc/Akita.png",
+			"id": 463
+		},
+		{
+			"name": "Gaku Inuzuka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/6a/Gaku_Inuzuka.png",
+			"id": 464
+		},
+		{
+			"name": "Hana Inuzuka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/97/Hana_Inuzuka.png",
+			"id": 465
+		},
+		{ "name": "Kiba Inuzuka", "image": "https://static.wikia.nocookie.net/naruto/images/0/03/Kiba.png", "id": 466 },
+		{
+			"name": "Tsume Inuzuka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f6/Tsume_Inuzuka.png",
+			"id": 468
+		},
+		{ "name": "Isago", "image": "https://static.wikia.nocookie.net/naruto/images/4/4d/Isago.png", "id": 473 },
+		{ "name": "Ise", "image": "https://static.wikia.nocookie.net/naruto/images/2/2c/Ise.png", "id": 476 },
+		{ "name": "Udon Ise", "image": "https://static.wikia.nocookie.net/naruto/images/7/76/Udon_p1.png", "id": 477 },
+		{ "name": "Ishikawa", "image": "https://static.wikia.nocookie.net/naruto/images/a/a1/Ishikawa.png", "id": 479 },
+		{ "name": "Isobu", "image": "https://static.wikia.nocookie.net/naruto/images/d/df/Isobu.png", "id": 480 },
+		{ "name": "Ittan", "image": "https://static.wikia.nocookie.net/naruto/images/e/ea/Ittan_Anime.png", "id": 485 },
+		{ "name": "Ittetsu", "image": "https://static.wikia.nocookie.net/naruto/images/f/f0/Ittetsu.png", "id": 486 },
+		{
+			"name": "Iyashi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/b7/Medical-nin.png",
+			"id": 494
+		},
+		{
+			"name": "Wasabi Izuno",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/49/Wasabi.png",
+			"id": 499
+		},
+		{ "name": "J", "image": "https://static.wikia.nocookie.net/naruto/images/5/51/J.png", "id": 501 },
+		{ "name": "JJ", "image": "https://static.wikia.nocookie.net/naruto/images/b/bf/J.J.png", "id": 502 },
+		{
+			"name": "Janmāru-Tataru",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/30/Hoshinarabe_11.png",
+			"id": 505
+		},
+		{ "name": "Jantō", "image": "https://static.wikia.nocookie.net/naruto/images/0/0b/Jant%C5%8D.png", "id": 506 },
+		{
+			"name": "Jigen",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/54/Jigen_Infobox.png",
+			"id": 510
+		},
+		{ "name": "Jiji", "image": "https://static.wikia.nocookie.net/naruto/images/6/67/Jiji.png", "id": 512 },
+		{
+			"name": "Jimei",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/55/Jimei.JPG/revision/latest?cb=20150807085416",
+			"id": 513
+		},
+		{
+			"name": "Jiraiya",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/21/Profile_Jiraiya.png",
+			"id": 515
+		},
+		{
+			"name": "Jirōbō",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/45/Jirobo_newshot.png",
+			"id": 517
+		},
+		{
+			"name": "Jōseki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/ec/J%C5%8Dseki.png",
+			"id": 520
+		},
+		{ "name": "Jūgo", "image": "https://static.wikia.nocookie.net/naruto/images/4/42/Jugo.png", "id": 521 },
+		{ "name": "K", "image": "https://static.wikia.nocookie.net/naruto/images/9/99/K.png", "id": 524 },
+		{ "name": "Kagari", "image": "https://static.wikia.nocookie.net/naruto/images/0/0e/Kagari2.png", "id": 526 },
+		{
+			"name": "Kage (Anbu)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/73/Kage_%28ANBU%29.png",
+			"id": 528
+		},
+		{ "name": "Kail", "image": "https://static.wikia.nocookie.net/naruto/images/5/5c/Kail.png", "id": 541 },
+		{ "name": "Kaiza", "image": "https://static.wikia.nocookie.net/naruto/images/4/4f/Kaiza.png", "id": 544 },
+		{ "name": "Kaji", "image": "https://static.wikia.nocookie.net/naruto/images/4/4e/Kaji.png", "id": 545 },
+		{
+			"name": "Sumire Kakei",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/12/Sumire_Kakei.png",
+			"id": 550
+		},
+		{ "name": "Kakkō", "image": "https://static.wikia.nocookie.net/naruto/images/d/d8/Kakko.png", "id": 552 },
+		{
+			"name": "Kakoi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/73/Kakoi_infobox.png",
+			"id": 554
+		},
+		{ "name": "Kakuzu", "image": "https://static.wikia.nocookie.net/naruto/images/5/57/Kakuzu.png", "id": 558 },
+		{
+			"name": "Saisu Kamano",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/41/Saisu_Kamano.png",
+			"id": 563
+		},
+		{
+			"name": "Kamatari",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/c6/Summoning_Beheading_Dance.png",
+			"id": 565
+		},
+		{
+			"name": "Jin Kaminari",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f2/Jin_Kaminari_Anime.png",
+			"id": 567
+		},
+		{
+			"name": "Izumo Kamizuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/5d/Izumo_Kamizuki.png",
+			"id": 571
+		},
+		{
+			"name": "Kankurō",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/7d/Kankur%C5%8D1.png",
+			"id": 577
+		},
+		{ "name": "Kanpō", "image": "https://static.wikia.nocookie.net/naruto/images/c/c0/Kanp%C5%8D.png", "id": 583 },
+		{ "name": "Kanpu", "image": "https://static.wikia.nocookie.net/naruto/images/1/19/Kanpu.png", "id": 584 },
+		{ "name": "Kaori", "image": "https://static.wikia.nocookie.net/naruto/images/b/b8/Kaori.png", "id": 586 },
+		{
+			"name": "Yagura Karatachi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e0/Yagura.png",
+			"id": 591
+		},
+		{ "name": "Karin", "image": "https://static.wikia.nocookie.net/naruto/images/7/72/Karin3.png", "id": 593 },
+		{ "name": "Karui", "image": "https://static.wikia.nocookie.net/naruto/images/c/c3/Karui.png", "id": 596 },
+		{ "name": "Karura", "image": "https://static.wikia.nocookie.net/naruto/images/4/49/Karura.png", "id": 597 },
+		{
+			"name": "Kashike",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/5a/Kashike_new.png",
+			"id": 599
+		},
+		{ "name": "Koji Kashin", "image": "https://static.wikia.nocookie.net/naruto/images/f/f2/Koji.png", "id": 600 },
+		{ "name": "Kasumi", "image": "https://static.wikia.nocookie.net/naruto/images/6/6b/Kasumi.png", "id": 601 },
+		{
+			"name": "Dan Katō",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/13/Dan_HDshot.png",
+			"id": 605
+		},
+		{
+			"name": "Katsuyu",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/59/Katsuyu_Summoned.png",
+			"id": 608
+		},
+		{
+			"name": "Kawaki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/ef/Kawaki_infobox.png",
+			"id": 609
+		},
+		{ "name": "Kazabune", "image": "https://static.wikia.nocookie.net/naruto/images/c/cb/Kazabune.png", "id": 614 },
+		{
+			"name": "Moegi Kazamatsuri",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/b7/Moegi_p1.png",
+			"id": 618
+		},
+		{
+			"name": "Third Kazekage",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4e/Third_Kazekage_Reincarnated.png",
+			"id": 621
+		},
+		{ "name": "Keiri", "image": "https://static.wikia.nocookie.net/naruto/images/4/41/Keiri.png", "id": 625 },
+		{
+			"name": "Kidōmaru",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e8/Kid%C5%8Dmaru.png",
+			"id": 626
+		},
+		{ "name": "Kie", "image": "https://static.wikia.nocookie.net/naruto/images/6/60/Monjin.png", "id": 627 },
+		{ "name": "Killer B", "image": "https://static.wikia.nocookie.net/naruto/images/6/63/Killer_B.png", "id": 636 },
+		{
+			"name": "Kimimaro",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/c8/Kimimaro_infobox.png",
+			"id": 637
+		},
+		{ "name": "King", "image": "https://static.wikia.nocookie.net/naruto/images/f/f7/King_anime.png", "id": 639 },
+		{
+			"name": "King of Hell",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/30/Outer_Path.png",
+			"id": 640
+		},
+		{
+			"name": "Kinkaku",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f4/Kinkaku_268.png",
+			"id": 641
+		},
+		{
+			"name": "Kintoki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/60/Kintoki_mugshot.png",
+			"id": 643
+		},
+		{
+			"name": "Dosu Kinuta",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/b0/Dosu_Kinuta.png",
+			"id": 644
+		},
+		{ "name": "Kiri (ninja)", "image": "https://static.wikia.nocookie.net/naruto/images/8/82/Kiri.png", "id": 646 },
+		{ "name": "Kitō", "image": "https://static.wikia.nocookie.net/naruto/images/4/42/Kit%C5%8D.png", "id": 652 },
+		{
+			"name": "Kitsuchi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/14/Kitsuchi1.png",
+			"id": 653
+		},
+		{
+			"name": "Kohada",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/6c/Kohada_Anime.png",
+			"id": 663
+		},
+		{ "name": "Kōji", "image": "https://static.wikia.nocookie.net/naruto/images/a/a9/K%C5%8Dji2.png", "id": 666 },
+		{ "name": "Kokatsu", "image": "https://static.wikia.nocookie.net/naruto/images/a/a1/Kokatsu.png", "id": 667 },
+		{ "name": "Kokuō", "image": "https://static.wikia.nocookie.net/naruto/images/a/a3/Kokuo.png", "id": 669 },
+		{ "name": "Komaza", "image": "https://static.wikia.nocookie.net/naruto/images/b/bb/Komaza.png", "id": 676 },
+		{ "name": "Komugi", "image": "https://static.wikia.nocookie.net/naruto/images/b/bf/Komugi3.png", "id": 681 },
+		{
+			"name": "Konan",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/58/Konan_Infobox.png",
+			"id": 684
+		},
+		{ "name": "Koshō", "image": "https://static.wikia.nocookie.net/naruto/images/7/7e/Kosh%C5%8D.png", "id": 694 },
+		{ "name": "Kosuke", "image": "https://static.wikia.nocookie.net/naruto/images/d/d0/Kosuke.png", "id": 695 },
+		{
+			"name": "Kōsuke (Scientist)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d1/K%C5%8Dsuke.png",
+			"id": 696
+		},
+		{
+			"name": "Kōsuke",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/24/K%C5%8Dsuke.png",
+			"id": 697
+		},
+		{ "name": "Kōta", "image": "https://static.wikia.nocookie.net/naruto/images/d/d7/K%C5%8Dta.png", "id": 698 },
+		{ "name": "Kumadori", "image": "https://static.wikia.nocookie.net/naruto/images/6/6d/Kumadori.png", "id": 706 },
+		{
+			"name": "Head Ninja of Kumogakure",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/2f/Head_Ninja_of_Kumogakure.png",
+			"id": 708
+		},
+		{
+			"name": "Kushimaru Kuriarare",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4b/Kushimaru_Kuriarare.png",
+			"id": 716
+		},
+		{ "name": "Kuromaru", "image": "https://static.wikia.nocookie.net/naruto/images/6/6e/Kuromaru.png", "id": 721 },
+		{
+			"name": "Raiga Kurosuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/41/Raiga_Kurosuki.png",
+			"id": 724
+		},
+		{
+			"name": "Kurotsuchi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/29/Kurotsuchi_Part_II.png",
+			"id": 725
+		},
+		{ "name": "Kurozuka", "image": "https://static.wikia.nocookie.net/naruto/images/e/ee/Kurozuka.png", "id": 727 },
+		{ "name": "Kusabi", "image": "https://static.wikia.nocookie.net/naruto/images/6/60/Kusabi.png", "id": 728 },
+		{ "name": "Kussaku", "image": "https://static.wikia.nocookie.net/naruto/images/a/a5/Kussaku.png", "id": 729 },
+		{ "name": "Kusuma", "image": "https://static.wikia.nocookie.net/naruto/images/4/47/Kusuma.png", "id": 730 },
+		{ "name": "Kusushi", "image": "https://static.wikia.nocookie.net/naruto/images/f/f4/Kusushi.png", "id": 733 },
+		{
+			"name": "Kyodaigumo",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/60/Kyodaigumo.png",
+			"id": 734
+		},
+		{ "name": "Kyōya", "image": "https://static.wikia.nocookie.net/naruto/images/7/7e/Kyoya.png", "id": 735 },
+		{ "name": "Kyūsuke", "image": "https://static.wikia.nocookie.net/naruto/images/e/e7/Kyusuke.png", "id": 736 },
+		{
+			"name": "Metal Lee",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/93/Metal_Lee.png",
+			"id": 738
+		},
+		{
+			"name": "Rock Lee",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/97/Rock_Lee_Part_I.png",
+			"id": 739
+		},
+		{ "name": "Log", "image": "https://static.wikia.nocookie.net/naruto/images/9/94/Log_Infobox.png", "id": 744 },
+		{ "name": "Lyla", "image": "https://static.wikia.nocookie.net/naruto/images/4/4c/Lyla.png", "id": 745 },
+		{ "name": "Mabui", "image": "https://static.wikia.nocookie.net/naruto/images/d/d3/Mabui.png", "id": 749 },
+		{
+			"name": "Ikkyū Madoka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/60/Ikky%C5%AB_Madoka.png",
+			"id": 750
+		},
+		{
+			"name": "Tentō Madoka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/98/Tent%C5%8D_Madoka_anime.png",
+			"id": 751
+		},
+		{
+			"name": "Mahiru",
+			"image": "https://static.wikia.nocookie.net/naruto/images/a/a3/Mahiru_Infobox.png",
+			"id": 753
+		},
+		{ "name": "Maki", "image": "https://static.wikia.nocookie.net/naruto/images/2/21/Maki.png", "id": 754 },
+		{ "name": "Manari", "image": "https://static.wikia.nocookie.net/naruto/images/5/56/Manari.png", "id": 760 },
+		{
+			"name": "Manda",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e0/Manda_Summoned.png",
+			"id": 761
+		},
+		{ "name": "Manda II", "image": "https://static.wikia.nocookie.net/naruto/images/0/02/Manda_2.png", "id": 762 },
+		{ "name": "Matatabi", "image": "https://static.wikia.nocookie.net/naruto/images/a/a7/Matatabi.png", "id": 771 },
+		{ "name": "Matsu", "image": "https://static.wikia.nocookie.net/naruto/images/e/e7/Matsu.png", "id": 772 },
+		{
+			"name": "Matsuri",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/43/Matsuri_p1.png",
+			"id": 774
+		},
+		{
+			"name": "Matsuri (Konoha)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/36/Matsurikonoha.png",
+			"id": 775
+		},
+		{ "name": "Meizu", "image": "https://static.wikia.nocookie.net/naruto/images/5/59/Meizu.png", "id": 779 },
+		{ "name": "Menō", "image": "https://static.wikia.nocookie.net/naruto/images/1/1b/Men%C5%8D.png", "id": 782 },
+		{
+			"name": "Mezu (missing-nin)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/b8/Mezu.png",
+			"id": 785
+		},
+		{
+			"name": "Shinobu Mibu",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/b9/Shinobu.png",
+			"id": 787
+		},
+		{ "name": "Midare", "image": "https://static.wikia.nocookie.net/naruto/images/3/3c/Midare.png", "id": 790 },
+		{
+			"name": "Midori",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/18/Midori_newshot.png",
+			"id": 792
+		},
+		{ "name": "Mifune", "image": "https://static.wikia.nocookie.net/naruto/images/e/ee/Mifune.png", "id": 794 },
+		{ "name": "Migaki", "image": "https://static.wikia.nocookie.net/naruto/images/7/76/Migaki.png", "id": 795 },
+		{
+			"name": "Hamaki Mimura",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/5d/Hamaki_Mimura2.png",
+			"id": 801
+		},
+		{
+			"name": "Tomaru Minakura",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/28/Tomaru_Minakura.JPG/revision/latest/scale-to-width-down/100?cb=20150807084519",
+			"id": 802
+		},
+		{ "name": "Minoji", "image": "https://static.wikia.nocookie.net/naruto/images/a/af/Minoji.png", "id": 805 },
+		{ "name": "Miru", "image": "https://static.wikia.nocookie.net/naruto/images/d/d7/Miru_Infobox.png", "id": 807 },
+		{ "name": "Misuno", "image": "https://static.wikia.nocookie.net/naruto/images/2/2d/Misuno.png", "id": 808 },
+		{
+			"name": "Anko Mitarashi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/bd/Anko_Part_I.png",
+			"id": 809
+		},
+		{ "name": "Mitate", "image": "https://static.wikia.nocookie.net/naruto/images/3/39/Mitate.png", "id": 810 },
+		{
+			"name": "Homura Mitokado",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/1b/Homura_Mitokado.png",
+			"id": 811
+		},
+		{ "name": "Mitoku", "image": "https://static.wikia.nocookie.net/naruto/images/7/72/Mitoku.png", "id": 812 },
+		{ "name": "Mitsuki", "image": "https://static.wikia.nocookie.net/naruto/images/5/5c/Mitsuki.png", "id": 813 },
+		{
+			"name": "Dango Mitsuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/a/a6/Dango_Mitsuki.png",
+			"id": 814
+		},
+		{
+			"name": "Third Mizukage",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/5f/Young_Third_Mizukage.png",
+			"id": 817
+		},
+		{ "name": "Mizuki", "image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Mizuki.png", "id": 818 },
+		{ "name": "Mizunoto", "image": "https://static.wikia.nocookie.net/naruto/images/b/b4/Mizunoto.png", "id": 820 },
+		{ "name": "Mogusa", "image": "https://static.wikia.nocookie.net/naruto/images/2/2d/Mogusa.png", "id": 824 },
+		{
+			"name": "Kunugi Mokume",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/ef/Kunugi_Mokume.png",
+			"id": 825
+		},
+		{
+			"name": "Momiji (Tanzaku)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/1f/Momiji_%28woman%29.png",
+			"id": 827
+		},
+		{
+			"name": "Zabuza Momochi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/37/Zabuza_Momochi.png",
+			"id": 831
+		},
+		{
+			"name": "Ibiki Morino",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4b/Ibiki_Part_I.png",
+			"id": 835
+		},
+		{ "name": "Morio", "image": "https://static.wikia.nocookie.net/naruto/images/c/cb/Morio.png", "id": 837 },
+		{
+			"name": "Moroi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/ed/Moroi_HDShot.png",
+			"id": 838
+		},
+		{ "name": "Motoi", "image": "https://static.wikia.nocookie.net/naruto/images/5/55/Motoi.png", "id": 840 },
+		{ "name": "Mozuku", "image": "https://static.wikia.nocookie.net/naruto/images/1/16/Mozuku.png", "id": 841 },
+		{ "name": "Mū", "image": "https://static.wikia.nocookie.net/naruto/images/d/d5/M%C5%AB.png", "id": 844 },
+		{ "name": "Mubi", "image": "https://static.wikia.nocookie.net/naruto/images/4/43/Mubi2.png", "id": 845 },
+		{ "name": "Mugino", "image": "https://static.wikia.nocookie.net/naruto/images/1/19/Mugino.png", "id": 846 },
+		{ "name": "Mukade", "image": "https://static.wikia.nocookie.net/naruto/images/b/b3/Mukade.png", "id": 850 },
+		{
+			"name": "Jinpachi Munashi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4c/Jinpachi_Munashi.png",
+			"id": 853
+		},
+		{ "name": "Musai", "image": "https://static.wikia.nocookie.net/naruto/images/6/6a/Musai.png", "id": 855 },
+		{ "name": "Nae", "image": "https://static.wikia.nocookie.net/naruto/images/e/e2/Nae.png", "id": 859 },
+		{ "name": "Nagato", "image": "https://static.wikia.nocookie.net/naruto/images/4/46/Nagato.png", "id": 861 },
+		{
+			"name": "Raidō Namiashi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d1/Raid%C5%8D_Namiashi_mugshot.png",
+			"id": 863
+		},
+		{
+			"name": "Minato Namikaze",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/71/Minato_Namikaze.png",
+			"id": 865
+		},
+		{ "name": "Nanara", "image": "https://static.wikia.nocookie.net/naruto/images/9/9f/Nanara.png", "id": 869 },
+		{
+			"name": "Daen Nara",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/76/Daen_Nara.png",
+			"id": 871
+		},
+		{
+			"name": "Ensui Nara",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/da/Ensui_Nara_Anime.png",
+			"id": 873
+		},
+		{
+			"name": "Kasuga Nara",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/97/Kasuga_Nara.png",
+			"id": 874
+		},
+		{
+			"name": "Maen Nara",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/08/Maen_Nara.png",
+			"id": 875
+		},
+		{
+			"name": "Shikadai Nara",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/3d/Shikadai_Nara.png",
+			"id": 876
+		},
+		{
+			"name": "Shikaku Nara",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e0/Shikaku_Nara.png",
+			"id": 877
+		},
+		{
+			"name": "Shikamaru Nara",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/44/Shikamaru_Part_I.png",
+			"id": 878
+		},
+		{
+			"name": "Suzaku Nara",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/67/Suzaku_Nara.png",
+			"id": 879
+		},
+		{
+			"name": "Yoshino Nara",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/9f/Yoshino_Nara.png",
+			"id": 880
+		},
+		{
+			"name": "Naraka Path (character)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/81/Naraka_Path.png",
+			"id": 881
+		},
+		{ "name": "Natori", "image": "https://static.wikia.nocookie.net/naruto/images/c/c6/Natori.png", "id": 882 },
+		{
+			"name": "Nawaki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/a/a5/Nawaki_Infobox.png",
+			"id": 886
+		},
+		{
+			"name": "Nejiri",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4d/Nejiri.JPG/revision/latest?cb=20150807090437",
+			"id": 888
+		},
+		{ "name": "Nekobaa", "image": "https://static.wikia.nocookie.net/naruto/images/e/ee/Nekobaa.png", "id": 889 },
+		{
+			"name": "Buriko Nekoka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/06/Buriko_Nekoka_Anime.png",
+			"id": 890
+		},
+		{ "name": "Yugito Nii", "image": "https://static.wikia.nocookie.net/naruto/images/2/2f/Yugito.png", "id": 898 },
+		{ "name": "Ningame", "image": "https://static.wikia.nocookie.net/naruto/images/b/b9/Nin-game.png", "id": 899 },
+		{
+			"name": "Nishi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/fc/Nishi.JPG/revision/latest?cb=20150807085116",
+			"id": 900
+		},
+		{
+			"name": "Nishi (sensor)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f5/Nishi.png",
+			"id": 901
+		},
+		{ "name": "Nobori", "image": "https://static.wikia.nocookie.net/naruto/images/4/47/Nobori.png", "id": 902 },
+		{
+			"name": "Rin Nohara",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/bc/Rin_Nohara.png",
+			"id": 903
+		},
+		{
+			"name": "Nonota",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/53/Nonota_HDShot.png",
+			"id": 905
+		},
+		{ "name": "Oboro", "image": "https://static.wikia.nocookie.net/naruto/images/5/51/Oboro.png", "id": 911 },
+		{ "name": "Ōkei", "image": "https://static.wikia.nocookie.net/naruto/images/6/68/%C5%8Ckei.png", "id": 915 },
+		{ "name": "Okisuke", "image": "https://static.wikia.nocookie.net/naruto/images/e/e3/Okisuke.png", "id": 916 },
+		{ "name": "Okyō", "image": "https://static.wikia.nocookie.net/naruto/images/5/5f/Oky%C5%8D.png", "id": 918 },
+		{ "name": "Omoi", "image": "https://static.wikia.nocookie.net/naruto/images/9/9f/Omoi_Part_II.png", "id": 920 },
+		{ "name": "Ōnoki", "image": "https://static.wikia.nocookie.net/naruto/images/6/67/%C5%8Cnoki.png", "id": 925 },
+		{
+			"name": "Orochimaru",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/14/Orochimaru_Infobox.png",
+			"id": 928
+		},
+		{ "name": "Otoha", "image": "https://static.wikia.nocookie.net/naruto/images/c/cf/Otoha.jpg", "id": 930 },
+		{ "name": "Otokaze", "image": "https://static.wikia.nocookie.net/naruto/images/2/29/Otokaze.png", "id": 931 },
+		{ "name": "Ōtora", "image": "https://static.wikia.nocookie.net/naruto/images/c/cb/%C5%8Ctora.png", "id": 932 },
+		{
+			"name": "Asura Ōtsutsuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/56/Asura_%C5%8Ctsutsuki.png",
+			"id": 934
+		},
+		{
+			"name": "Hagoromo Ōtsutsuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/62/Hagoromo.png",
+			"id": 935
+		},
+		{
+			"name": "Hamura Ōtsutsuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e8/Hamura.png",
+			"id": 936
+		},
+		{
+			"name": "Indra Ōtsutsuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/bd/Indra_%C5%8Ctsutsuki.png",
+			"id": 938
+		},
+		{
+			"name": "Isshiki Ōtsutsuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/21/Isshiki.png",
+			"id": 939
+		},
+		{
+			"name": "Kaguya Ōtsutsuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/6c/Kaguya_%C5%8Ctsutsuki.png",
+			"id": 940
+		},
+		{
+			"name": "Kinshiki Ōtsutsuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/ca/Kinshiki.png",
+			"id": 941
+		},
+		{
+			"name": "Momoshiki Ōtsutsuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d1/Momoshiki.png",
+			"id": 942
+		},
+		{
+			"name": "Shibai Ōtsutsuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/fd/Shibai_%C5%8Ctsutsuki.png",
+			"id": 943
+		},
+		{ "name": "Oyone", "image": "https://static.wikia.nocookie.net/naruto/images/1/19/Oyone.png", "id": 948 },
+		{ "name": "Pakkun", "image": "https://static.wikia.nocookie.net/naruto/images/b/bc/Pakkun.png", "id": 949 },
+		{
+			"name": "Pakura",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/71/ParukaAnime.png",
+			"id": 950
+		},
+		{ "name": "Penjira", "image": "https://static.wikia.nocookie.net/naruto/images/7/7a/Penjira.png", "id": 951 },
+		{ "name": "Pochi", "image": "https://static.wikia.nocookie.net/naruto/images/2/24/Pochi.png", "id": 952 },
+		{ "name": "Ponta", "image": "https://static.wikia.nocookie.net/naruto/images/c/cc/Ponta_chan.png", "id": 953 },
+		{
+			"name": "Preta Path (character)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/20/Preta_Path.png",
+			"id": 956
+		},
+		{
+			"name": "Prime Minister",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/fb/Prime_Minister.png",
+			"id": 957
+		},
+		{ "name": "Ranka", "image": "https://static.wikia.nocookie.net/naruto/images/d/da/Ranka1.png", "id": 964 },
+		{
+			"name": "Rasa",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/24/Yondaime_Kazekage.png",
+			"id": 967
+		},
+		{ "name": "Rashii", "image": "https://static.wikia.nocookie.net/naruto/images/4/4b/Rashii.png", "id": 968 },
+		{ "name": "Reki", "image": "https://static.wikia.nocookie.net/naruto/images/3/3d/Reki.png", "id": 969 },
+		{ "name": "Reto", "image": "https://static.wikia.nocookie.net/naruto/images/0/05/Reto.png", "id": 971 },
+		{ "name": "Riichi", "image": "https://static.wikia.nocookie.net/naruto/images/a/a9/Riichi.png", "id": 972 },
+		{ "name": "Rikumaru", "image": "https://static.wikia.nocookie.net/naruto/images/2/24/Rikumaru.png", "id": 974 },
+		{
+			"name": "Ameyuri Ringo",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/0e/Ameyuri.png",
+			"id": 975
+		},
+		{ "name": "Rōshi", "image": "https://static.wikia.nocookie.net/naruto/images/c/c9/Roshi.png", "id": 983 },
+		{ "name": "Ryōkan", "image": "https://static.wikia.nocookie.net/naruto/images/0/03/Ryokan.png", "id": 987 },
+		{
+			"name": "Yatogo Ryūgen",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4f/Yatogo_Ryugen.png",
+			"id": 993
+		},
+		{ "name": "Ryūsa", "image": "https://static.wikia.nocookie.net/naruto/images/0/0d/Ryusa.png", "id": 995 },
+		{ "name": "Ryūsui", "image": "https://static.wikia.nocookie.net/naruto/images/8/84/Ryusui.png", "id": 996 },
+		{ "name": "Ryūki", "image": "https://static.wikia.nocookie.net/naruto/images/2/24/Ry%C5%ABki.png", "id": 998 },
+		{ "name": "Sabu", "image": "https://static.wikia.nocookie.net/naruto/images/8/8a/Sabu.png", "id": 1000 },
+		{ "name": "Sagan", "image": "https://static.wikia.nocookie.net/naruto/images/f/fb/Sagan.png", "id": 1005 },
+		{ "name": "Sai", "image": "https://static.wikia.nocookie.net/naruto/images/0/07/Sai_Infobox.png", "id": 1008 },
+		{ "name": "Saiken", "image": "https://static.wikia.nocookie.net/naruto/images/5/58/Saiken.png", "id": 1009 },
+		{ "name": "Sajin", "image": "https://static.wikia.nocookie.net/naruto/images/1/19/Sajin_suna.png", "id": 1011 },
+		{ "name": "Sajō", "image": "https://static.wikia.nocookie.net/naruto/images/e/e5/Sajo.png", "id": 1013 },
+		{
+			"name": "Sakon and Ukon",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/2e/Sakon_and_Ukon.png",
+			"id": 1015
+		},
+		{
+			"name": "Unmo Samidare",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/c7/Bingo_bok_inside.png",
+			"id": 1018
+		},
+		{ "name": "Samui", "image": "https://static.wikia.nocookie.net/naruto/images/2/23/Samui.png", "id": 1019 },
+		{
+			"name": "Akebi Sanzu",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/82/Akebi.png",
+			"id": 1026
+		},
+		{
+			"name": "Amado Sanzu",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/74/Amado.png",
+			"id": 1027
+		},
+		{ "name": "Sari", "image": "https://static.wikia.nocookie.net/naruto/images/4/47/Sari.png", "id": 1032 },
+		{
+			"name": "Tsuzumi Sarugaku",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/69/Tsuzumi_Sarugaku_part_2.png",
+			"id": 1033
+		},
+		{
+			"name": "Asuma Sarutobi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/7c/Asuma.png",
+			"id": 1034
+		},
+		{
+			"name": "Biwako Sarutobi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d0/Biwako_Sarutobi.png",
+			"id": 1035
+		},
+		{
+			"name": "Hiruzen Sarutobi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e4/Hiruzen_Sarutobi.png",
+			"id": 1036
+		},
+		{
+			"name": "Konohamaru Sarutobi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/89/Konohamaru_p1.png",
+			"id": 1037
+		},
+		{
+			"name": "Mirai Sarutobi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/7a/Mirai_Sarutobi.png",
+			"id": 1038
+		},
+		{ "name": "Sasori", "image": "https://static.wikia.nocookie.net/naruto/images/f/f7/Sasori.png", "id": 1042 },
+		{
+			"name": "Sasori's Father",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/ee/Sasori%27s_father.png",
+			"id": 1043
+		},
+		{
+			"name": "Sasori's Mother",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/78/Sasori%27s_mother.png",
+			"id": 1044
+		},
+		{ "name": "Satetsu", "image": "https://static.wikia.nocookie.net/naruto/images/a/ab/Satetsu.png", "id": 1045 },
+		{
+			"name": "Satō",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f8/Sat%C5%8D_Anime.png",
+			"id": 1046
+		},
+		{ "name": "Sekka", "image": "https://static.wikia.nocookie.net/naruto/images/e/ee/Sekka.png", "id": 1057 },
+		{
+			"name": "Butsuma Senju",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/8d/Butsuma.png",
+			"id": 1062
+		},
+		{
+			"name": "Hashirama Senju",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/7e/Hashirama_Senju.png",
+			"id": 1063
+		},
+		{
+			"name": "Itama Senju",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/fb/Itama_Senju.png",
+			"id": 1064
+		},
+		{
+			"name": "Kawarama Senju",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/1e/Kawarama.png",
+			"id": 1065
+		},
+		{
+			"name": "Tobirama Senju",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/be/Tobirama_Senju.png",
+			"id": 1066
+		},
+		{
+			"name": "Tōka Senju",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/86/Toka_Senju.png",
+			"id": 1067
+		},
+		{
+			"name": "Makinami Senka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/21/Makinami_Senka.png",
+			"id": 1068
+		},
+		{
+			"name": "Sazanami Senka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/03/Sazanami_Senka.png",
+			"id": 1069
+		},
+		{
+			"name": "Takanami Senka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/0e/Takanami.png",
+			"id": 1070
+		},
+		{ "name": "Sentoki", "image": "https://static.wikia.nocookie.net/naruto/images/1/15/Sentoki.png", "id": 1072 },
+		{
+			"name": "Shamon",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/12/2ndkazekage.png",
+			"id": 1077
+		},
+		{ "name": "Shiba", "image": "https://static.wikia.nocookie.net/naruto/images/9/9d/Shiba.png", "id": 1079 },
+		{
+			"name": "Shiba (Kusagakure)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/8d/Shiba_%28kusa%29.png",
+			"id": 1080
+		},
+		{ "name": "Shibire", "image": "https://static.wikia.nocookie.net/naruto/images/0/03/Shibire2.png", "id": 1081 },
+		{ "name": "Shigure", "image": "https://static.wikia.nocookie.net/naruto/images/d/dc/Shigure.png", "id": 1085 },
+		{ "name": "Shiho", "image": "https://static.wikia.nocookie.net/naruto/images/4/40/Shiho2.png", "id": 1086 },
+		{
+			"name": "Madam Shijimi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/98/Tora_and_Madam_Shijimi_original.png",
+			"id": 1089
+		},
+		{ "name": "Shima", "image": "https://static.wikia.nocookie.net/naruto/images/6/69/Shima.png", "id": 1091 },
+		{ "name": "Shimeji", "image": "https://static.wikia.nocookie.net/naruto/images/1/19/Shimeji.png", "id": 1092 },
+		{
+			"name": "Danzō Shimura",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/17/Danz%C5%8D.png",
+			"id": 1093
+		},
+		{
+			"name": "Shin",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/13/Shin_Revived.png",
+			"id": 1094
+		},
+		{
+			"name": "Shinigami",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/99/Shinigami_Infobox.png",
+			"id": 1099
+		},
+		{ "name": "Shinki", "image": "https://static.wikia.nocookie.net/naruto/images/7/78/Shinki.png", "id": 1100 },
+		{ "name": "Shinta", "image": "https://static.wikia.nocookie.net/naruto/images/d/df/Shinta.png", "id": 1102 },
+		{ "name": "Shio", "image": "https://static.wikia.nocookie.net/naruto/images/8/81/Shio_Anime.png", "id": 1103 },
+		{ "name": "Shiore", "image": "https://static.wikia.nocookie.net/naruto/images/c/c9/Shiore.png", "id": 1105 },
+		{
+			"name": "Genma Shiranui",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/90/Genma_Shiranui.png",
+			"id": 1110
+		},
+		{
+			"name": "Shizune",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/0a/Shizune_Infobox.png",
+			"id": 1122
+		},
+		{ "name": "Shojoji", "image": "https://static.wikia.nocookie.net/naruto/images/d/d7/Shojoji.png", "id": 1123 },
+		{ "name": "Shū", "image": "https://static.wikia.nocookie.net/naruto/images/e/ec/Sh%C5%AB.png", "id": 1125 },
+		{ "name": "Shukaku", "image": "https://static.wikia.nocookie.net/naruto/images/9/99/Shukaku.png", "id": 1127 },
+		{
+			"name": "Son Gokū",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/5e/Son_Goku.png",
+			"id": 1134
+		},
+		{ "name": "Sōzu", "image": "https://static.wikia.nocookie.net/naruto/images/b/b4/S%C5%8Dzu.png", "id": 1138 },
+		{
+			"name": "Fuguki Suikazan",
+			"image": "https://static.wikia.nocookie.net/naruto/images/a/a7/Fuguki.png",
+			"id": 1145
+		},
+		{ "name": "Sukima", "image": "https://static.wikia.nocookie.net/naruto/images/b/bc/Sukima.png", "id": 1151 },
+		{ "name": "Sumashi", "image": "https://static.wikia.nocookie.net/naruto/images/2/25/Sumashi.png", "id": 1155 },
+		{
+			"name": "Sumire (citizen)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d6/Sumire.png",
+			"id": 1156
+		},
+		{ "name": "Suname", "image": "https://static.wikia.nocookie.net/naruto/images/b/b2/Suname.png", "id": 1159 },
+		{ "name": "Susuki", "image": "https://static.wikia.nocookie.net/naruto/images/5/52/Susuki.png", "id": 1160 },
+		{
+			"name": "Suzume",
+			"image": "https://static.wikia.nocookie.net/naruto/images/a/a6/Suzume_Infobox.png",
+			"id": 1164
+		},
+		{
+			"name": "Namida Suzumeno",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/1d/Namida.png",
+			"id": 1166
+		},
+		{ "name": "Taiseki", "image": "https://static.wikia.nocookie.net/naruto/images/4/43/Taiseki.png", "id": 1173 },
+		{ "name": "Taji", "image": "https://static.wikia.nocookie.net/naruto/images/c/c6/Taji.png", "id": 1175 },
+		{
+			"name": "Tajiki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/26/Tajik_mugshot.png",
+			"id": 1176
+		},
+		{
+			"name": "Takamaru",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/1e/Takamaru.png",
+			"id": 1177
+		},
+		{ "name": "Takishi", "image": "https://static.wikia.nocookie.net/naruto/images/a/a8/Takishi.png", "id": 1180 },
+		{ "name": "Tamae", "image": "https://static.wikia.nocookie.net/naruto/images/6/66/Tamae.png", "id": 1182 },
+		{ "name": "Tamaki", "image": "https://static.wikia.nocookie.net/naruto/images/6/68/Tamaki.png", "id": 1183 },
+		{ "name": "Tami", "image": "https://static.wikia.nocookie.net/naruto/images/a/ab/Tami.png", "id": 1185 },
+		{ "name": "Tango", "image": "https://static.wikia.nocookie.net/naruto/images/9/91/Tango.png", "id": 1186 },
+		{ "name": "Tanzō", "image": "https://static.wikia.nocookie.net/naruto/images/4/4f/Tanz%C5%8D.png", "id": 1188 },
+		{ "name": "Tarui", "image": "https://static.wikia.nocookie.net/naruto/images/1/1b/Tarui.png", "id": 1193 },
+		{
+			"name": "Tasuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/54/Tasuki_Infobox.png",
+			"id": 1195
+		},
+		{
+			"name": "Iwashi Tatami",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/7c/Iwashi_Tatami.png",
+			"id": 1196
+		},
+		{
+			"name": "Tayuya",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/78/Tayuya_Shot.png",
+			"id": 1203
+		},
+		{
+			"name": "Tazuna",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/46/Tazuna_Part_II.png",
+			"id": 1204
+		},
+		{ "name": "Teguse", "image": "https://static.wikia.nocookie.net/naruto/images/a/a6/Teguse.png", "id": 1206 },
+		{
+			"name": "Temari",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/bb/Temari_newshot.png",
+			"id": 1208
+		},
+		{ "name": "Temui", "image": "https://static.wikia.nocookie.net/naruto/images/2/26/Temui.png", "id": 1209 },
+		{
+			"name": "Ten-Tails (Kara)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/54/Kara%27s_Ten-Tails.png",
+			"id": 1211
+		},
+		{
+			"name": "Tenga",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/48/Tenga_anime.png",
+			"id": 1212
+		},
+		{
+			"name": "Tenten",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/da/Tenten_Part_1.png",
+			"id": 1216
+		},
+		{ "name": "Terai", "image": "https://static.wikia.nocookie.net/naruto/images/4/4a/Terai.png", "id": 1220 },
+		{ "name": "Terubō", "image": "https://static.wikia.nocookie.net/naruto/images/f/f7/Terubo.png", "id": 1222 },
+		{ "name": "Mei Terumī", "image": "https://static.wikia.nocookie.net/naruto/images/6/6f/Mei.png", "id": 1223 },
+		{ "name": "Tessa", "image": "https://static.wikia.nocookie.net/naruto/images/c/c6/Tessa.png", "id": 1224 },
+		{ "name": "Tetsu", "image": "https://static.wikia.nocookie.net/naruto/images/5/59/Tetsu2.png", "id": 1225 },
+		{ "name": "Tetsuru", "image": "https://static.wikia.nocookie.net/naruto/images/d/d9/Tetsuru.png", "id": 1226 },
+		{
+			"name": "Teuchi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d6/Teuchi_Infobox.png",
+			"id": 1227
+		},
+		{
+			"name": "Tobi (Zetsu)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/72/Tobi.png",
+			"id": 1229
+		},
+		{
+			"name": "Tobimaru",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4b/Tobimaru.png",
+			"id": 1230
+		},
+		{ "name": "Tobio", "image": "https://static.wikia.nocookie.net/naruto/images/d/d3/Tobio.png", "id": 1231 },
+		{
+			"name": "Tonbo Tobitake",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/db/Tonbo_Tobitake.png",
+			"id": 1232
+		},
+		{
+			"name": "Tessen Togeito",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/27/Tessen_Togeito.png",
+			"id": 1236
+		},
+		{ "name": "Tokara", "image": "https://static.wikia.nocookie.net/naruto/images/3/38/Tokara2.png", "id": 1238 },
+		{
+			"name": "Kabure Tokisuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/79/Kabure_Tokisuki.png",
+			"id": 1241
+		},
+		{
+			"name": "Tomari",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/72/Tomari_new.png",
+			"id": 1243
+		},
+		{
+			"name": "Katasuke Tōno",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/6d/Katasuke.png",
+			"id": 1248
+		},
+		{ "name": "Tonton", "image": "https://static.wikia.nocookie.net/naruto/images/b/b7/Tonton.png", "id": 1250 },
+		{
+			"name": "Tora",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/98/Tora_and_Madam_Shijimi_original.png",
+			"id": 1251
+		},
+		{
+			"name": "Tora (Anbu)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/bd/Tora_ANBU.png",
+			"id": 1252
+		},
+		{
+			"name": "Kumade Toriichi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/76/Kumade_Toriichi.png",
+			"id": 1253
+		},
+		{
+			"name": "Takajō Torikai",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4e/Takajo_Torikai.png",
+			"id": 1254
+		},
+		{
+			"name": "Toroi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/cc/Toroi_HDShot.png",
+			"id": 1255
+		},
+		{
+			"name": "Toroi (Genin)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d1/Toroi_%28Genin%29.png",
+			"id": 1256
+		},
+		{
+			"name": "Tsubaki (parent)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/19/Tsubaki_%28parent%29.png",
+			"id": 1261
+		},
+		{ "name": "Tsubusa", "image": "https://static.wikia.nocookie.net/naruto/images/6/65/Tsubusa.png", "id": 1264 },
+		{
+			"name": "Kin Tsuchi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f3/Kin_Tsuchi.png",
+			"id": 1265
+		},
+		{
+			"name": "Tsuchino",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/8c/Tsuchino_new.png",
+			"id": 1267
+		},
+		{
+			"name": "Tsukushi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/98/Tsukushi_Infobox.png",
+			"id": 1278
+		},
+		{
+			"name": "Tsunade",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/b3/Tsunade_infobox2.png",
+			"id": 1280
+		},
+		{ "name": "Tsunami", "image": "https://static.wikia.nocookie.net/naruto/images/c/c1/Tsunami1.png", "id": 1281 },
+		{
+			"name": "Misumi Tsurugi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/c6/Misumi_Tsurugi.png",
+			"id": 1283
+		},
+		{
+			"name": "Fugaku Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f2/Fugaku.png",
+			"id": 1289
+		},
+		{
+			"name": "Hikaku Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/c1/Hikaku_Uchiha.png",
+			"id": 1291
+		},
+		{
+			"name": "Inabi Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/52/Inabi.png",
+			"id": 1292
+		},
+		{
+			"name": "Itachi Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/bb/Itachi.png",
+			"id": 1293
+		},
+		{
+			"name": "Izuna Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/83/Izuna_Uchiha.png",
+			"id": 1296
+		},
+		{
+			"name": "Kagami Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/7/73/Kagami-Uchiha.png",
+			"id": 1297
+		},
+		{
+			"name": "Madara Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/fd/Madara.png",
+			"id": 1299
+		},
+		{
+			"name": "Mikoto Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/8e/Mikoto_Uchiha.png",
+			"id": 1300
+		},
+		{
+			"name": "Obito Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4a/Obito_Uchiha.png",
+			"id": 1303
+		},
+		{
+			"name": "Sarada Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/9a/Sarada_Infobox.png",
+			"id": 1306
+		},
+		{
+			"name": "Sasuke Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/21/Sasuke_Part_1.png",
+			"id": 1307
+		},
+		{
+			"name": "Setsuna Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/b4/Setsuna_Uchiha.png",
+			"id": 1308
+		},
+		{
+			"name": "Shin Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/cd/Shin_uchiha.png",
+			"id": 1309
+		},
+		{
+			"name": "Shisui Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/4c/Shisui_Uchiha.png",
+			"id": 1310
+		},
+		{
+			"name": "Tajima Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/26/Tajima_Uchiha.png",
+			"id": 1312
+		},
+		{
+			"name": "Tekka Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/9c/Tekka_Uchiha.png",
+			"id": 1313
+		},
+		{
+			"name": "Teyaki Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/14/Teyaki_Uchiha.png",
+			"id": 1314
+		},
+		{
+			"name": "Uruchi Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/bd/Uruchi_Uchiha.png",
+			"id": 1315
+		},
+		{
+			"name": "Yakumi Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/df/Yakumi_Uchiha.png",
+			"id": 1316
+		},
+		{
+			"name": "Yashiro Uchiha",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/b7/Yashiro_Uchiha.png",
+			"id": 1317
+		},
+		{ "name": "Ugai", "image": "https://static.wikia.nocookie.net/naruto/images/1/18/Ugai_manga.png", "id": 1318 },
+		{ "name": "Ugatsu", "image": "https://static.wikia.nocookie.net/naruto/images/3/32/Ugatsu.png", "id": 1319 },
+		{ "name": "Ūhei", "image": "https://static.wikia.nocookie.net/naruto/images/6/6c/Uhei.png", "id": 1320 },
+		{
+			"name": "Ikkaku Umino",
+			"image": "https://static.wikia.nocookie.net/naruto/images/a/a5/Ikkaku_Umino.png",
+			"id": 1324
+		},
+		{
+			"name": "Iruka Umino",
+			"image": "https://static.wikia.nocookie.net/naruto/images/b/bc/Iruka.png",
+			"id": 1325
+		},
+		{
+			"name": "Kohari Umino",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/14/Kohari_Umino.png",
+			"id": 1326
+		},
+		{ "name": "Urakaku", "image": "https://static.wikia.nocookie.net/naruto/images/4/49/Urakaku.png", "id": 1331 },
+		{
+			"name": "Urushi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f7/Urushi_Part_II.png",
+			"id": 1332
+		},
+		{
+			"name": "Urushi (summon)",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e1/Urushi_Ninken.png",
+			"id": 1333
+		},
+		{ "name": "Ushi", "image": "https://static.wikia.nocookie.net/naruto/images/c/c0/Ushi_ANBU.png", "id": 1334 },
+		{ "name": "Utakata", "image": "https://static.wikia.nocookie.net/naruto/images/2/27/Utakata.png", "id": 1335 },
+		{
+			"name": "Koharu Utatane",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/9f/Koharu_Utatane.png",
+			"id": 1336
+		},
+		{
+			"name": "Yūgao Uzuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f3/Y%C5%ABgao_Uzuki.png",
+			"id": 1337
+		},
+		{
+			"name": "Ashina Uzumaki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/86/Ashina_Uzumaki.png",
+			"id": 1338
+		},
+		{
+			"name": "Boruto Uzumaki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/de/Boruto_Infobox.png",
+			"id": 1339
+		},
+		{
+			"name": "Himawari Uzumaki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/2/26/Himawari.png",
+			"id": 1340
+		},
+		{
+			"name": "Kushina Uzumaki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/db/Kushina.png",
+			"id": 1341
+		},
+		{
+			"name": "Mito Uzumaki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/69/Mito.png",
+			"id": 1343
+		},
+		{
+			"name": "Naruto Uzumaki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d6/Naruto_Part_I.png",
+			"id": 1344
+		},
+		{ "name": "Victor", "image": "https://static.wikia.nocookie.net/naruto/images/9/90/Victor.png", "id": 1346 },
+		{ "name": "Waraji", "image": "https://static.wikia.nocookie.net/naruto/images/d/db/Waraji.png", "id": 1350 },
+		{
+			"name": "White Snake Sage",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d4/Snake_Sage.png",
+			"id": 1353
+		},
+		{ "name": "Yahiko", "image": "https://static.wikia.nocookie.net/naruto/images/7/76/Yahiko.png", "id": 1356 },
+		{
+			"name": "Yajirobee",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/5e/Yajirobee.png",
+			"id": 1357
+		},
+		{ "name": "Yakku", "image": "https://static.wikia.nocookie.net/naruto/images/8/84/Yakku.png", "id": 1358 },
+		{
+			"name": "Kabuto Yakushi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/c9/Kabuto_Part_1.png",
+			"id": 1359
+		},
+		{
+			"name": "Nonō Yakushi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/07/Non%C5%8D.png",
+			"id": 1361
+		},
+		{ "name": "Fū Yamanaka", "image": "https://static.wikia.nocookie.net/naruto/images/9/95/Fu_1.png", "id": 1364 },
+		{ "name": "Ino Yamanaka", "image": "https://static.wikia.nocookie.net/naruto/images/d/dd/Ino.png", "id": 1365 },
+		{
+			"name": "Inoichi Yamanaka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/d/d2/Inoichi_Yamanaka.png",
+			"id": 1367
+		},
+		{
+			"name": "Inojin Yamanaka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e6/Inojin_movie.png",
+			"id": 1368
+		},
+		{
+			"name": "Santa Yamanaka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/c/cd/Santa_Yamanaka.png",
+			"id": 1370
+		},
+		{
+			"name": "Yamaoka",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/15/Yamaoka_Infobox.png",
+			"id": 1371
+		},
+		{
+			"name": "Aoba Yamashiro",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/42/Aoba.png",
+			"id": 1372
+		},
+		{
+			"name": "Yamato",
+			"image": "https://static.wikia.nocookie.net/naruto/images/f/f7/Yamato_newshot.png",
+			"id": 1373
+		},
+		{
+			"name": "Kokage Yanagikage",
+			"image": "https://static.wikia.nocookie.net/naruto/images/1/1c/Kokage_Yanagikage.png",
+			"id": 1374
+		},
+		{
+			"name": "Yashamaru",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/ef/YashamaruHD.png",
+			"id": 1376
+		},
+		{ "name": "Yodo", "image": "https://static.wikia.nocookie.net/naruto/images/f/ff/Yodo.png", "id": 1377 },
+		{
+			"name": "Yoshiteru",
+			"image": "https://static.wikia.nocookie.net/naruto/images/3/37/Yoshiteru.png",
+			"id": 1389
+		},
+		{
+			"name": "Kiyoi Yotsuki",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/42/Kiyoi_Yotsuki.png",
+			"id": 1392
+		},
+		{ "name": "Yūdachi", "image": "https://static.wikia.nocookie.net/naruto/images/a/aa/Yudachi.png", "id": 1395 },
+		{
+			"name": "Kurenai Yūhi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/6/67/Kurenai_Part_I.png",
+			"id": 1397
+		},
+		{
+			"name": "Shinku Yūhi",
+			"image": "https://static.wikia.nocookie.net/naruto/images/0/0f/Shinku_Y%C5%ABhi.png",
+			"id": 1398
+		},
+		{ "name": "Yui", "image": "https://static.wikia.nocookie.net/naruto/images/e/ee/Yui.png", "id": 1399 },
+		{
+			"name": "Yūra",
+			"image": "https://static.wikia.nocookie.net/naruto/images/8/85/Yura_in_sand_outfit.png",
+			"id": 1409
+		},
+		{ "name": "Yurika", "image": "https://static.wikia.nocookie.net/naruto/images/3/3f/Yurika.png", "id": 1410 },
+		{
+			"name": "Yurui",
+			"image": "https://static.wikia.nocookie.net/naruto/images/4/49/Yurui_movie.png",
+			"id": 1413
+		},
+		{ "name": "Zaji", "image": "https://static.wikia.nocookie.net/naruto/images/3/3b/Zaji.png", "id": 1418 },
+		{ "name": "Zangei", "image": "https://static.wikia.nocookie.net/naruto/images/f/fc/Zangei.png", "id": 1420 },
+		{
+			"name": "Zansūru",
+			"image": "https://static.wikia.nocookie.net/naruto/images/9/9d/Zans%C5%ABru.png",
+			"id": 1421
+		},
+		{ "name": "Zenza", "image": "https://static.wikia.nocookie.net/naruto/images/6/6b/Zenza.png", "id": 1423 },
+		{
+			"name": "Black Zetsu",
+			"image": "https://static.wikia.nocookie.net/naruto/images/e/e9/Black_Zetsu.png",
+			"id": 1425
+		},
+		{
+			"name": "White Zetsu",
+			"image": "https://static.wikia.nocookie.net/naruto/images/5/5f/White_Zetsu.png",
+			"id": 1426
+		},
+		{ "name": "Zō", "image": "https://static.wikia.nocookie.net/naruto/images/2/22/Z%C5%8D.png", "id": 1427 },
+		{ "name": "Zōri", "image": "https://static.wikia.nocookie.net/naruto/images/d/d9/Zori.png", "id": 1428 }
+	]
+}
