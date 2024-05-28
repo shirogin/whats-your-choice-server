@@ -72,6 +72,12 @@ class Game extends GameEvents_1.default {
             // emit user logged
         });
     }
+    EmitUpdateAll() {
+        if (this.player1)
+            this.emit('gameStateUpdated', Object.assign(Object.assign({}, this.getState()), { to: this.player1.socketId }));
+        if (this.player2)
+            this.emit('gameStateUpdated', Object.assign(Object.assign({}, this.getState()), { to: this.player2.socketId }));
+    }
     EmitUpdateForBoth() {
         if (this.player1)
             this.emit('gameStateUpdated', Object.assign(Object.assign({}, this.getState('player1')), { to: this.player1.socketId }));
@@ -252,15 +258,15 @@ class Game extends GameEvents_1.default {
         this.state = 'finished';
         if (otherPlayer.currentChoosenCard === cardId) {
             player.score++;
-            this.emit('playerWon', player.socketId, player.username);
-            this.emit('playerLost', otherPlayer.socketId, otherPlayer.username);
+            this.emit('playerWon', player.socketId, player);
+            this.emit('playerLost', otherPlayer.socketId, otherPlayer);
         }
         else {
             otherPlayer.score++;
-            this.emit('playerWon', otherPlayer.socketId, otherPlayer.username);
-            this.emit('playerLost', player.socketId, player.username);
+            this.emit('playerWon', otherPlayer.socketId, otherPlayer);
+            this.emit('playerLost', player.socketId, player);
         }
-        this.EmitUpdateForBoth();
+        this.EmitUpdateAll();
     }
     getState(stateFor) {
         return {
@@ -294,11 +300,13 @@ class Game extends GameEvents_1.default {
         const forPlayuer = stateFor ? this[stateFor] : null;
         const ofPlayer = this[stateOf];
         return ofPlayer
-            ? Object.assign(Object.assign({}, ofPlayer), { currentChoosenCard: (forPlayuer === null || forPlayuer === void 0 ? void 0 : forPlayuer.username) === ofPlayer.username
-                    ? ofPlayer.currentChoosenCard
-                    : ofPlayer.currentChoosenCard
-                        ? -1
-                        : null }) : null;
+            ? Object.assign(Object.assign({}, ofPlayer), { currentChoosenCard: forPlayuer
+                    ? forPlayuer.username === ofPlayer.username
+                        ? ofPlayer.currentChoosenCard
+                        : ofPlayer.currentChoosenCard
+                            ? -1
+                            : null
+                    : ofPlayer.currentChoosenCard }) : null;
     }
 }
 exports.default = Game;

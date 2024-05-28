@@ -64,13 +64,13 @@ const game = new Game_1.default('cards/naruto-cards.json');
         io.to(socketId).emit(Event_1.SocketEvent.PlayerLoggedOut);
         io.to(socketId).emit(Event_1.SocketEvent.GameUpdated, state);
     });
-    game.on('playerWon', (socketId, username) => {
-        console.log('player', username, 'won');
-        io.to(socketId).emit(Event_1.SocketEvent.PlayerWon);
+    game.on('playerWon', (socketId, player) => {
+        console.log('player', player.username, 'won');
+        io.to(socketId).emit(Event_1.SocketEvent.PlayerWon, player);
     });
-    game.on('playerLost', (socketId, username) => {
-        console.log('player', username, 'lost');
-        io.to(socketId).emit(Event_1.SocketEvent.PlayerLost);
+    game.on('playerLost', (socketId, player) => {
+        console.log('player', player.username, 'lost');
+        io.to(socketId).emit(Event_1.SocketEvent.PlayerLost, player);
     });
 }).catch((e) => {
     console.log(e);

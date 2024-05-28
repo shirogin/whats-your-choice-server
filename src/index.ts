@@ -54,13 +54,13 @@ game.cardCollection
 			io.to(socketId).emit(SocketEvent.PlayerLoggedOut);
 			io.to(socketId).emit(SocketEvent.GameUpdated, state);
 		});
-		game.on('playerWon', (socketId, username) => {
-			console.log('player', username, 'won');
-			io.to(socketId).emit(SocketEvent.PlayerWon);
+		game.on('playerWon', (socketId, player) => {
+			console.log('player', player.username, 'won');
+			io.to(socketId).emit(SocketEvent.PlayerWon, player);
 		});
-		game.on('playerLost', (socketId, username) => {
-			console.log('player', username, 'lost');
-			io.to(socketId).emit(SocketEvent.PlayerLost);
+		game.on('playerLost', (socketId, player) => {
+			console.log('player', player.username, 'lost');
+			io.to(socketId).emit(SocketEvent.PlayerLost, player);
 		});
 	})
 	.catch((e) => {

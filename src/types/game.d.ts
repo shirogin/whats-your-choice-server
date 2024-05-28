@@ -53,8 +53,8 @@ declare interface GameEvents {
 	roomIsFull: (socketId: string) => void;
 	playerAlreadyLoggedOut: (socketId: string, state: DirectedGameState) => void;
 	errorHappened: (message: string) => void;
-	playerWon: (socketId: string, username: string) => void;
-	playerLost: (socketId: string, username: string) => void;
+	playerWon: (socketId: string, player: Player) => void;
+	playerLost: (socketId: string, player: Player) => void;
 }
 declare type GameEventsName = keyof GameEvents;
 interface GameManagerI {

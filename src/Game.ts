@@ -61,6 +61,10 @@ export default class Game extends GameEventEmitter implements GameState {
 		this.EmitUpdateForBoth();
 		// emit user logged
 	}
+	private EmitUpdateAll() {
+		if (this.player1) this.emit('gameStateUpdated', { ...this.getState(), to: this.player1.socketId });
+		if (this.player2) this.emit('gameStateUpdated', { ...this.getState(), to: this.player2.socketId });
+	}
 	private EmitUpdateForBoth() {
 		if (this.player1) this.emit('gameStateUpdated', { ...this.getState('player1'), to: this.player1.socketId });
 		if (this.player2) this.emit('gameStateUpdated', { ...this.getState('player2'), to: this.player2.socketId });
@@ -239,14 +243,14 @@ export default class Game extends GameEventEmitter implements GameState {
 		this.state = 'finished';
 		if (otherPlayer.currentChoosenCard === cardId) {
 			player.score++;
-			this.emit('playerWon', player.socketId, player.username);
-			this.emit('playerLost', otherPlayer.socketId, otherPlayer.username);
+			this.emit('playerWon', player.socketId, player);
+			this.emit('playerLost', otherPlayer.socketId, otherPlayer);
 		} else {
 			otherPlayer.score++;
-			this.emit('playerWon', otherPlayer.socketId, otherPlayer.username);
-			this.emit('playerLost', player.socketId, player.username);
+			this.emit('playerWon', otherPlayer.socketId, otherPlayer);
+			this.emit('playerLost', player.socketId, player);
 		}
-		this.EmitUpdateForBoth();
+		this.EmitUpdateAll();
 	}
 
 	getState(stateFor?: PlayerPosition): GameState {
@@ -281,12 +285,13 @@ export default class Game extends GameEventEmitter implements GameState {
 		return ofPlayer
 			? {
 					...ofPlayer,
-					currentChoosenCard:
-						forPlayuer?.username === ofPlayer.username
+					currentChoosenCard: forPlayuer
+						? forPlayuer.username === ofPlayer.username
 							? ofPlayer.currentChoosenCard
 							: ofPlayer.currentChoosenCard
 								? -1
-								: null,
+								: null
+						: ofPlayer.currentChoosenCard,
 				}
 			: null;
 	}
