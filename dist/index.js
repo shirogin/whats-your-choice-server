@@ -36,7 +36,7 @@ const server = http_1.default.createServer(app);
 // Create a new instance of socket.io by passing the HTTP server object
 const io = new socket_io_1.Server(server, {
     cors: {
-        origin: 'http://localhost:5173',
+        origin: 'https://whats-your-choice.vercel.app/',
         credentials: true,
     },
 });
