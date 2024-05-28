@@ -52,6 +52,12 @@ export default class Game extends GameEventEmitter implements GameState {
 		if (this.player1 !== null && this.player2 !== null) this.hasRoom = false;
 		this.players.set(playerInfo.username, player);
 		this.emit('playerLoggedIn', socketId, await this.cardCollection!);
+		if (this.player1 && this.player2) {
+			if (this.state === 'notStarted' && this.player1.currentChoosenCard && this.player2.currentChoosenCard) {
+				this.state = 'started';
+				this.currentTurn = Math.random() > 0.5 ? 'player1' : 'player2';
+			}
+		}
 		this.EmitUpdateForBoth();
 		// emit user logged
 	}
