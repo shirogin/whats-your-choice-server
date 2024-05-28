@@ -27,7 +27,7 @@ const server = http.createServer(app);
 // Create a new instance of socket.io by passing the HTTP server object
 const io = new Server(server, {
 	cors: {
-		origin: 'http://localhost:5173',
+		origin: 'https://whats-your-charachter.adaptable.app',
 		credentials: true,
 	},
 });
