@@ -1,7 +1,6 @@
 import { ZodError } from 'zod';
 import { CardsCollection } from './Cards';
 import GameEventEmitter from './GameEvents';
-import e from 'express';
 
 export default class Game extends GameEventEmitter implements GameState {
 	player1: PlayerWithSocket | null = null;

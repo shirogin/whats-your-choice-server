@@ -3,10 +3,15 @@ import express from 'express';
 import http from 'http';
 import { Server } from 'socket.io';
 import cors from 'cors';
-import { SocketEvent } from '../../whats-your-choice/src/types/Event';
+import { SocketEvent } from './types/Event';
 
 // Create a new express application
 const app = express();
+const port = process.env.PORT;
+if (!port) {
+	throw new Error('Port not defined');
+	process.exit(1);
+}
 
 // Enable CORS
 app.use(

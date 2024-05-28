@@ -1,11 +1,11 @@
 {
 	"name": "whats-your-choice-server",
 	"version": "1.0.0",
-	"main": "index.js",
+	"main": "dist/index.js",
 	"scripts": {
 		"clean": "rimraf ./dist",
 		"build": "npm run clean && tsc -b",
-		"start": "node src",
+		"start": "node dist/index.js",
 		"dev": "tsx watch --clear-screen=false src/index.ts"
 	},
 	"author": "",

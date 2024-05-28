@@ -13,6 +13,5 @@
   },
   "include": [
     "src/**/*.ts",
-    "../whats-your-choice/src/types/**/*.ts", /* in case you are importing types from another project */
   ]
 }
