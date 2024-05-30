@@ -1,25 +1,40 @@
-import { ZodError } from 'zod';
+import { Server } from 'socket.io';
 import { CardsCollection } from './Cards';
 import GameEventEmitter from './GameEvents';
+import { SocketEvent } from './types/Event';
+import { io } from './app';
 
 export default class Game extends GameEventEmitter implements GameState {
+	id: string;
 	player1: PlayerWithSocket | null = null;
 	state: GameStatesI = 'notStarted';
 	player2: PlayerWithSocket | null = null;
 	currentTurn: 'player1' | 'player2' | null = null;
 	players: Map<string, PlayerWithSocket> = new Map<string, PlayerWithSocket>();
 	hasRoom: boolean = true;
-	cardCollection: Promise<CardsCollection> | null = null;
-	cardCollectionMap: Map<string, CardsCollection> = new Map<string, CardsCollection>();
+	cardCollection: CardsCollection;
+	gameCardCollection: CardsCollection;
 	hasPassedTurn: boolean = true;
 	hasDeleted: boolean = false;
 	canSwitchMode: boolean = true;
+	gameCardsSize: number;
 
-	constructor(cardsFile: string) {
+	constructor(cardCollectionId: string, gameCardsSize = 24) {
 		super();
-		this.initGame(cardsFile);
+		this.id = Math.random().toString(36).substring(2, 9);
+		this.state = 'notStarted';
+		this.player1 = null;
+		this.hasPassedTurn = true;
+		this.player2 = null;
+		this.currentTurn = null;
+		this.hasRoom = true;
+		this.gameCardCollection =
+			CardsCollection.getCardsCollection(cardCollectionId) || CardsCollection.defaultCollection;
+		this.cardCollection = this.gameCardCollection.getRandomN(24);
+		this.gameCardsSize = gameCardsSize;
+		this.loadEvents();
 	}
-	async logPlayer(playerInfo: PlayerInfo, socketId: string) {
+	async logPlayer(playerInfo: PlayerInfo, socketId: string, roomId: string) {
 		let player: PlayerWithSocket;
 		if (!this.hasRoom) {
 			// emit user not logged bcs there is no room
@@ -37,7 +52,7 @@ export default class Game extends GameEventEmitter implements GameState {
 				lastCardClicked: null,
 				currentChoosenCard: null,
 				score: 0,
-				cards: await this.cardCollection!.then((cards) => cards.cards.map((card) => card.id)),
+				cards: this.cardCollection.cards.map((card) => card.id),
 			};
 		}
 		if (this.player1 === null || this.player1.username === playerInfo.username) {
@@ -51,7 +66,7 @@ export default class Game extends GameEventEmitter implements GameState {
 		}
 		if (this.player1 !== null && this.player2 !== null) this.hasRoom = false;
 		this.players.set(playerInfo.username, player);
-		this.emit('playerLoggedIn', socketId, await this.cardCollection!);
+		this.emit('playerLoggedIn', socketId, this.cardCollection, roomId);
 		if (this.player1 && this.player2) {
 			if (this.state === 'notStarted' && this.player1.currentChoosenCard && this.player2.currentChoosenCard) {
 				this.state = 'started';
@@ -84,62 +99,27 @@ export default class Game extends GameEventEmitter implements GameState {
 		this.emit('playerLoggedOut', socketId);
 		this.EmitUpdateForBoth();
 	}
-	async loadCards(cardsFile: string): Promise<CardsCollection | null> {
-		try {
-			const cardCollection = await CardsCollection.loadCardsFromJson(cardsFile);
-			this.cardCollectionMap.set(cardCollection.id, cardCollection);
-			return cardCollection;
-		} catch (e) {
-			if (e instanceof ZodError) console.log('This card collection is invalid', e.errors);
-			else console.error(e);
-			return null;
-		}
-	}
-	async initGame(cardsFile: string) {
-		this.state = 'notStarted';
-		this.player1 = null;
-		this.hasPassedTurn = true;
-		this.player2 = null;
-		this.currentTurn = null;
-		this.hasRoom = true;
-		this.cardCollection = this.loadCards(cardsFile).then((cards) => {
-			return this.getCardCollections();
-		});
-		return this.cardCollection;
-	}
-	async restartGame() {
+
+	async restartGame(roomId: string) {
 		this.state = 'notStarted';
 		this.currentTurn = null;
 		this.hasPassedTurn = true;
 		this.hasDeleted = false;
 		this.canSwitchMode = true;
-		this.cardCollection = this.cardCollection!.then((cards) => {
-			return this.getCardCollections();
-		}).then((cards) => {
-			this.player1 = {
-				...this.player1!,
-				currentChoosenCard: null,
-				cards: cards.cards.map((card) => card.id),
-			};
-			this.player2 = {
-				...this.player2!,
-				currentChoosenCard: null,
-				cards: cards.cards.map((card) => card.id),
-			};
-			return cards;
-		});
-		if (this.player1) this.emit('playerLoggedIn', this.player1.socketId, await this.cardCollection!);
-		if (this.player2) this.emit('playerLoggedIn', this.player2.socketId, await this.cardCollection!);
+		this.cardCollection = this.gameCardCollection.getRandomN(this.gameCardsSize);
+		this.player1 = {
+			...this.player1!,
+			currentChoosenCard: null,
+			cards: this.cardCollection.cards.map((card) => card.id),
+		};
+		this.player2 = {
+			...this.player2!,
+			currentChoosenCard: null,
+			cards: this.cardCollection.cards.map((card) => card.id),
+		};
+		if (this.player1) this.emit('playerLoggedIn', this.player1.socketId, this.cardCollection, roomId);
+		if (this.player2) this.emit('playerLoggedIn', this.player2.socketId, this.cardCollection, roomId);
 		this.EmitUpdateForBoth();
-	}
-	getCardCollections(cardCollectionId?: string, size = 24): CardsCollection {
-		const _cardCollectionId = cardCollectionId
-			? cardCollectionId
-			: (this.cardCollectionMap.keys().next().value as string | undefined);
-		if (!_cardCollectionId) throw new Error('Card ID collection not found');
-		const cardCollection = this.cardCollectionMap.get(_cardCollectionId);
-		if (cardCollection === undefined) throw new Error('Card collection not found');
-		return cardCollection.getRandomN(size);
 	}
 
 	playerPickCard(socketId: string, cardId: number) {
@@ -294,5 +274,37 @@ export default class Game extends GameEventEmitter implements GameState {
 						: ofPlayer.currentChoosenCard,
 				}
 			: null;
+	}
+
+	/* Events */
+	loadEvents() {
+		console.log('Game events loaded', { id: this.id });
+		this.on('playerLoggedIn', (socketId, cardsCollection, roomId) => {
+			io.to(socketId).emit(SocketEvent.PlayerLoggedIn, cardsCollection, roomId);
+		});
+		this.on('gameStateUpdated', (state) => {
+			console.log('Game Updated');
+			if (state.to) io.to(state.to).emit('gameUpdated', state);
+			else io.emit(SocketEvent.GameUpdated, state);
+		});
+		this.on('playerLoggedOut', (socketId) => {
+			io.to(socketId).emit(SocketEvent.PlayerLoggedOut);
+		});
+		this.on('errorHappened', (message) => {
+			console.log('Game Error', message);
+			io.emit(SocketEvent.Error, message);
+		});
+		this.on('playerAlreadyLoggedOut', (socketId, state) => {
+			io.to(socketId).emit(SocketEvent.PlayerLoggedOut);
+			io.to(socketId).emit(SocketEvent.GameUpdated, state);
+		});
+		this.on('playerWon', (socketId, player) => {
+			console.log('player', player.username, 'won');
+			io.to(socketId).emit(SocketEvent.PlayerWon, player);
+		});
+		this.on('playerLost', (socketId, player) => {
+			console.log('player', player.username, 'lost');
+			io.to(socketId).emit(SocketEvent.PlayerLost, player);
+		});
 	}
 }

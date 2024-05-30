@@ -1,5 +1,5 @@
-declare interface CardEssential {
-	id: number;
+declare interface CardEssential<ID = number> {
+	id: ID;
 	name: string;
 	image: string;
 }
@@ -47,7 +47,7 @@ declare interface DirectedGameState extends GameState {
 declare type NotConnectedYetState = 'loading' | 'disconnected';
 declare type ConnectionStates = 'connected' | NotConnectedYetState | 'inRoom';
 declare interface GameEvents {
-	playerLoggedIn: (socketId: string, cardsCollection: CardsJSON) => void;
+	playerLoggedIn: (socketId: string, cardsCollection: CardsJSON, roomId: string) => void;
 	gameStateUpdated: (state: DirectedGameState) => void;
 	playerLoggedOut: (socketId: string) => void;
 	roomIsFull: (socketId: string) => void;
@@ -57,10 +57,3 @@ declare interface GameEvents {
 	playerLost: (socketId: string, player: Player) => void;
 }
 declare type GameEventsName = keyof GameEvents;
-interface GameManagerI {
-	mode: 'switch' | 'guess';
-	selectedCard: number | null;
-	gameState: GameState;
-	currentPlayer: PlayerInfo;
-	cards: CardsJSON | null;
-}

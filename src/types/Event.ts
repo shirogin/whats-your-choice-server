@@ -1,10 +1,14 @@
 export enum SocketEvent {
 	Connect = 'connect',
 	Disconnect = 'disconnect',
-	/* // Emit events
-	JoinRoom = 'join-room',
-	LeaveRoom = 'leave-room', */
+	// Emit events
+	JoinRoom = 'joinRoom',
+	CreateRoom = 'createRoom',
+	LeaveRoom = 'leaveRoom',
 	// On events
+	RecievedCardChoices = 'recievedCardChoices',
+	// On events
+
 	PlayerLoggedIn = 'playerLoggedIn',
 	PlayerLoggedOut = 'playerLoggedOut',
 	GameUpdated = 'gameUpdated',
