@@ -12,11 +12,12 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const zod_1 = require("zod");
 const Cards_1 = require("./Cards");
 const GameEvents_1 = __importDefault(require("./GameEvents"));
+const Event_1 = require("./types/Event");
+const app_1 = require("./app");
 class Game extends GameEvents_1.default {
-    constructor(cardsFile) {
+    constructor(cardCollectionId, gameCardsSize = 24) {
         super();
         this.player1 = null;
         this.state = 'notStarted';
@@ -24,14 +25,23 @@ class Game extends GameEvents_1.default {
         this.currentTurn = null;
         this.players = new Map();
         this.hasRoom = true;
-        this.cardCollection = null;
-        this.cardCollectionMap = new Map();
         this.hasPassedTurn = true;
         this.hasDeleted = false;
         this.canSwitchMode = true;
-        this.initGame(cardsFile);
+        this.id = Math.random().toString(36).substring(2, 9);
+        this.state = 'notStarted';
+        this.player1 = null;
+        this.hasPassedTurn = true;
+        this.player2 = null;
+        this.currentTurn = null;
+        this.hasRoom = true;
+        this.gameCardCollection =
+            Cards_1.CardsCollection.getCardsCollection(cardCollectionId) || Cards_1.CardsCollection.defaultCollection;
+        this.cardCollection = this.gameCardCollection.getRandomN(24);
+        this.gameCardsSize = gameCardsSize;
+        this.loadEvents();
     }
-    logPlayer(playerInfo, socketId) {
+    logPlayer(playerInfo, socketId, roomId) {
         return __awaiter(this, void 0, void 0, function* () {
             let player;
             if (!this.hasRoom) {
@@ -45,7 +55,7 @@ class Game extends GameEvents_1.default {
                 this.players.set(playerInfo.username, player);
             }
             else {
-                player = Object.assign(Object.assign({}, playerInfo), { socketId, lastCardClicked: null, currentChoosenCard: null, score: 0, cards: yield this.cardCollection.then((cards) => cards.cards.map((card) => card.id)) });
+                player = Object.assign(Object.assign({}, playerInfo), { socketId, lastCardClicked: null, currentChoosenCard: null, score: 0, cards: this.cardCollection.cards.map((card) => card.id) });
             }
             if (this.player1 === null || this.player1.username === playerInfo.username) {
                 this.player1 = player;
@@ -61,7 +71,7 @@ class Game extends GameEvents_1.default {
             if (this.player1 !== null && this.player2 !== null)
                 this.hasRoom = false;
             this.players.set(playerInfo.username, player);
-            this.emit('playerLoggedIn', socketId, yield this.cardCollection);
+            this.emit('playerLoggedIn', socketId, this.cardCollection, roomId);
             if (this.player1 && this.player2) {
                 if (this.state === 'notStarted' && this.player1.currentChoosenCard && this.player2.currentChoosenCard) {
                     this.state = 'started';
@@ -100,67 +110,22 @@ class Game extends GameEvents_1.default {
         this.emit('playerLoggedOut', socketId);
         this.EmitUpdateForBoth();
     }
-    loadCards(cardsFile) {
-        return __awaiter(this, void 0, void 0, function* () {
-            try {
-                const cardCollection = yield Cards_1.CardsCollection.loadCardsFromJson(cardsFile);
-                this.cardCollectionMap.set(cardCollection.id, cardCollection);
-                return cardCollection;
-            }
-            catch (e) {
-                if (e instanceof zod_1.ZodError)
-                    console.log('This card collection is invalid', e.errors);
-                else
-                    console.error(e);
-                return null;
-            }
-        });
-    }
-    initGame(cardsFile) {
-        return __awaiter(this, void 0, void 0, function* () {
-            this.state = 'notStarted';
-            this.player1 = null;
-            this.hasPassedTurn = true;
-            this.player2 = null;
-            this.currentTurn = null;
-            this.hasRoom = true;
-            this.cardCollection = this.loadCards(cardsFile).then((cards) => {
-                return this.getCardCollections();
-            });
-            return this.cardCollection;
-        });
-    }
-    restartGame() {
+    restartGame(roomId) {
         return __awaiter(this, void 0, void 0, function* () {
             this.state = 'notStarted';
             this.currentTurn = null;
             this.hasPassedTurn = true;
             this.hasDeleted = false;
             this.canSwitchMode = true;
-            this.cardCollection = this.cardCollection.then((cards) => {
-                return this.getCardCollections();
-            }).then((cards) => {
-                this.player1 = Object.assign(Object.assign({}, this.player1), { currentChoosenCard: null, cards: cards.cards.map((card) => card.id) });
-                this.player2 = Object.assign(Object.assign({}, this.player2), { currentChoosenCard: null, cards: cards.cards.map((card) => card.id) });
-                return cards;
-            });
+            this.cardCollection = this.gameCardCollection.getRandomN(this.gameCardsSize);
+            this.player1 = Object.assign(Object.assign({}, this.player1), { currentChoosenCard: null, cards: this.cardCollection.cards.map((card) => card.id) });
+            this.player2 = Object.assign(Object.assign({}, this.player2), { currentChoosenCard: null, cards: this.cardCollection.cards.map((card) => card.id) });
             if (this.player1)
-                this.emit('playerLoggedIn', this.player1.socketId, yield this.cardCollection);
+                this.emit('playerLoggedIn', this.player1.socketId, this.cardCollection, roomId);
             if (this.player2)
-                this.emit('playerLoggedIn', this.player2.socketId, yield this.cardCollection);
+                this.emit('playerLoggedIn', this.player2.socketId, this.cardCollection, roomId);
             this.EmitUpdateForBoth();
         });
-    }
-    getCardCollections(cardCollectionId, size = 24) {
-        const _cardCollectionId = cardCollectionId
-            ? cardCollectionId
-            : this.cardCollectionMap.keys().next().value;
-        if (!_cardCollectionId)
-            throw new Error('Card ID collection not found');
-        const cardCollection = this.cardCollectionMap.get(_cardCollectionId);
-        if (cardCollection === undefined)
-            throw new Error('Card collection not found');
-        return cardCollection.getRandomN(size);
     }
     playerPickCard(socketId, cardId) {
         const [player, otherPlayer] = this.canChooseCard(socketId);
@@ -307,6 +272,39 @@ class Game extends GameEvents_1.default {
                             ? -1
                             : null
                     : ofPlayer.currentChoosenCard }) : null;
+    }
+    /* Events */
+    loadEvents() {
+        console.log('Game events loaded', { id: this.id });
+        this.on('playerLoggedIn', (socketId, cardsCollection, roomId) => {
+            app_1.io.to(socketId).emit(Event_1.SocketEvent.PlayerLoggedIn, cardsCollection, roomId);
+        });
+        this.on('gameStateUpdated', (state) => {
+            console.log('Game Updated');
+            if (state.to)
+                app_1.io.to(state.to).emit('gameUpdated', state);
+            else
+                app_1.io.emit(Event_1.SocketEvent.GameUpdated, state);
+        });
+        this.on('playerLoggedOut', (socketId) => {
+            app_1.io.to(socketId).emit(Event_1.SocketEvent.PlayerLoggedOut);
+        });
+        this.on('errorHappened', (message) => {
+            console.log('Game Error', message);
+            app_1.io.emit(Event_1.SocketEvent.Error, message);
+        });
+        this.on('playerAlreadyLoggedOut', (socketId, state) => {
+            app_1.io.to(socketId).emit(Event_1.SocketEvent.PlayerLoggedOut);
+            app_1.io.to(socketId).emit(Event_1.SocketEvent.GameUpdated, state);
+        });
+        this.on('playerWon', (socketId, player) => {
+            console.log('player', player.username, 'won');
+            app_1.io.to(socketId).emit(Event_1.SocketEvent.PlayerWon, player);
+        });
+        this.on('playerLost', (socketId, player) => {
+            console.log('player', player.username, 'lost');
+            app_1.io.to(socketId).emit(Event_1.SocketEvent.PlayerLost, player);
+        });
     }
 }
 exports.default = Game;

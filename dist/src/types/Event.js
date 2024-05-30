@@ -5,9 +5,12 @@ var SocketEvent;
 (function (SocketEvent) {
     SocketEvent["Connect"] = "connect";
     SocketEvent["Disconnect"] = "disconnect";
-    /* // Emit events
-    JoinRoom = 'join-room',
-    LeaveRoom = 'leave-room', */
+    // Emit events
+    SocketEvent["JoinRoom"] = "joinRoom";
+    SocketEvent["CreateRoom"] = "createRoom";
+    SocketEvent["LeaveRoom"] = "leaveRoom";
+    // On events
+    SocketEvent["RecievedCardChoices"] = "recievedCardChoices";
     // On events
     SocketEvent["PlayerLoggedIn"] = "playerLoggedIn";
     SocketEvent["PlayerLoggedOut"] = "playerLoggedOut";

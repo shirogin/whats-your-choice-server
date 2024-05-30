@@ -12,13 +12,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.CardsCollection = void 0;
 const promises_1 = require("fs/promises");
 const zod_1 = require("zod");
-/*
-declare interface CardEssential {
-    id: string;
-    name: string;
-    image: string;
-}
- */
 const CardValidator = zod_1.z.object({
     id: zod_1.z.number(),
     name: zod_1.z.string(),
@@ -40,8 +33,22 @@ class CardsCollection {
             const cardsJson = yield (0, promises_1.readFile)(fileName, 'utf-8');
             const cards = CardsValidator.parse(JSON.parse(cardsJson)); // catch an error that is instanceof z.ZodError
             console.log(`cards collection ${cards.name} loaded with ${cards.cards.length} cards`);
-            return new CardsCollection(cards.id, cards.name, cards.cards);
+            const cardsCollection = new CardsCollection(cards.id, cards.name, cards.cards);
+            CardsCollection.cardCollectionMap.set(cards.id, cardsCollection);
+            if (!CardsCollection.defaultCollection)
+                CardsCollection.defaultCollection = cardsCollection;
+            return {
+                id: cardsCollection.id,
+                name: cardsCollection.name,
+                image: cardsCollection.cards[0].image,
+            };
         });
+    }
+    static getCardsCollection(id) {
+        const cardsCollection = CardsCollection.cardCollectionMap.get(id);
+        if (!cardsCollection)
+            return null;
+        return cardsCollection;
     }
     getRandomN(n) {
         const randomCards = [];
@@ -56,4 +63,5 @@ class CardsCollection {
     }
 }
 exports.CardsCollection = CardsCollection;
+CardsCollection.cardCollectionMap = new Map();
 //# sourceMappingURL=Cards.js.map
