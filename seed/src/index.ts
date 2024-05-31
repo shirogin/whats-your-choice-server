@@ -7,8 +7,6 @@ const cards = [
 	CardsCollection.loadCardsFromJson('cards/naruto-cards.json'),
 	CardsCollection.loadCardsFromJson('cards/onpiece.json'),
 	CardsCollection.loadCardsFromJson('cards/onpiece-anime.json'),
-	CardsCollection.loadCardsFromJson('cards/berserk.json'),
-	CardsCollection.loadCardsFromJson('cards/games.json'),
 ];
 const roomsManager = new RoomsManager();
 
