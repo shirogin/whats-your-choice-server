@@ -7,6 +7,7 @@ const app_1 = require("./app");
 const cards = [
     Cards_1.CardsCollection.loadCardsFromJson('cards/naruto-cards.json'),
     Cards_1.CardsCollection.loadCardsFromJson('cards/onpiece.json'),
+    Cards_1.CardsCollection.loadCardsFromJson('cards/onpiece-anime.json'),
 ];
 const roomsManager = new Rooms_1.RoomsManager();
 Promise.all(cards).then((cards) => {

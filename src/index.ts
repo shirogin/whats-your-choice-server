@@ -6,6 +6,7 @@ import { PORT, io, server } from './app';
 const cards = [
 	CardsCollection.loadCardsFromJson('cards/naruto-cards.json'),
 	CardsCollection.loadCardsFromJson('cards/onpiece.json'),
+	CardsCollection.loadCardsFromJson('cards/onpiece-anime.json'),
 ];
 const roomsManager = new RoomsManager();
 

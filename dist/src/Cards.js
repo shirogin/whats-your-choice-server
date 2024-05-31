@@ -15,17 +15,19 @@ const zod_1 = require("zod");
 const CardValidator = zod_1.z.object({
     id: zod_1.z.number(),
     name: zod_1.z.string(),
-    image: zod_1.z.string(),
+    image: zod_1.z.string().url(),
 });
 const CardsValidator = zod_1.z.object({
     id: zod_1.z.string(),
     name: zod_1.z.string(),
+    image: zod_1.z.string().url(),
     cards: zod_1.z.array(CardValidator),
 });
 class CardsCollection {
-    constructor(id, name, cards) {
+    constructor(id, name, image, cards) {
         this.id = id;
         this.name = name;
+        this.image = image;
         this.cards = cards;
     }
     static loadCardsFromJson(fileName) {
@@ -33,14 +35,14 @@ class CardsCollection {
             const cardsJson = yield (0, promises_1.readFile)(fileName, 'utf-8');
             const cards = CardsValidator.parse(JSON.parse(cardsJson)); // catch an error that is instanceof z.ZodError
             console.log(`cards collection ${cards.name} loaded with ${cards.cards.length} cards`);
-            const cardsCollection = new CardsCollection(cards.id, cards.name, cards.cards);
+            const cardsCollection = new CardsCollection(cards.id, cards.name, cards.image, cards.cards);
             CardsCollection.cardCollectionMap.set(cards.id, cardsCollection);
             if (!CardsCollection.defaultCollection)
                 CardsCollection.defaultCollection = cardsCollection;
             return {
                 id: cardsCollection.id,
                 name: cardsCollection.name,
-                image: cardsCollection.cards[0].image,
+                image: cardsCollection.image,
             };
         });
     }
@@ -59,7 +61,7 @@ class CardsCollection {
             else
                 randomCards.push(this.cards[randomIndex]);
         }
-        return new CardsCollection(this.id, this.name, randomCards);
+        return new CardsCollection(this.id, this.name, randomCards[0].image, randomCards);
     }
 }
 exports.CardsCollection = CardsCollection;

@@ -5,11 +5,12 @@ import { MyZodType } from './tools/defaultZod';
 const CardValidator = z.object<MyZodType<CardEssential>>({
 	id: z.number(),
 	name: z.string(),
-	image: z.string(),
+	image: z.string().url(),
 });
 const CardsValidator = z.object<MyZodType<CardsJSON>>({
 	id: z.string(),
 	name: z.string(),
+	image: z.string().url(),
 	cards: z.array(CardValidator),
 });
 
@@ -20,22 +21,24 @@ export class CardsCollection implements CardsJSON {
 	cards: CardEssential[];
 	name: string;
 	id: string;
-	constructor(id: string, name: string, cards: CardEssential[]) {
+	image: string;
+	constructor(id: string, name: string, image: string, cards: CardEssential[]) {
 		this.id = id;
 		this.name = name;
+		this.image = image;
 		this.cards = cards;
 	}
 	static async loadCardsFromJson(fileName: string): Promise<CardEssential<string>> {
 		const cardsJson = await readFile(fileName, 'utf-8');
 		const cards = CardsValidator.parse(JSON.parse(cardsJson)); // catch an error that is instanceof z.ZodError
 		console.log(`cards collection ${cards.name} loaded with ${cards.cards.length} cards`);
-		const cardsCollection = new CardsCollection(cards.id, cards.name, cards.cards);
+		const cardsCollection = new CardsCollection(cards.id, cards.name, cards.image, cards.cards);
 		CardsCollection.cardCollectionMap.set(cards.id, cardsCollection);
 		if (!CardsCollection.defaultCollection) CardsCollection.defaultCollection = cardsCollection;
 		return {
 			id: cardsCollection.id,
 			name: cardsCollection.name,
-			image: cardsCollection.cards[0].image,
+			image: cardsCollection.image,
 		};
 	}
 	static getCardsCollection(id: string): CardsCollection | null {
@@ -50,6 +53,6 @@ export class CardsCollection implements CardsJSON {
 			if (randomCards.includes(this.cards[randomIndex])) i--;
 			else randomCards.push(this.cards[randomIndex]);
 		}
-		return new CardsCollection(this.id, this.name, randomCards);
+		return new CardsCollection(this.id, this.name, randomCards[0].image, randomCards);
 	}
 }

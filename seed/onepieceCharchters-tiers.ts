@@ -1,5 +1,4 @@
 import { readFile, writeFile } from 'fs/promises';
-console.log('first');
 
 readFile('data/onepiece1.json', 'utf-8')
 	.then((data) => JSON.parse(data) as string[])
@@ -8,7 +7,8 @@ readFile('data/onepiece1.json', 'utf-8')
 		const cards = data.slice(1);
 		const cardsCollection: CardsJSON = {
 			id: 'onepiece',
-			name: 'One Piece',
+			name: 'One Piece manga',
+			image: 'https://tiermaker.com/images/chart/chart/one-piece---all-characters-630972/zz1651088398shankspng.png',
 			cards: cards.map((card, index) => ({
 				id: index,
 				name: card
@@ -24,4 +24,5 @@ readFile('data/onepiece1.json', 'utf-8')
 	.then((d) => {
 		writeFile('cards/onpiece.json', JSON.stringify(d, null, 2), 'utf-8');
 	})
-	.catch((error) => console.error(error));
+	.catch((error) => console.error(error))
+	.finally(() => console.log('loading one piece json done'));

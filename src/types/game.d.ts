@@ -6,6 +6,7 @@ declare interface CardEssential<ID = number> {
 interface CardsJSON {
 	id: string;
 	name: string;
+	image: string;
 	cards: CardEssential[];
 }
 declare interface FormedCard extends CardEssential {
