@@ -20,7 +20,9 @@ app.use(
 		credentials: true,
 	})
 );
-
+app.get('/healthz', (req, res) => {
+	res.send('server is healthy and alive.');
+});
 // Create an HTTP server using the express app
 export const server = http.createServer(app);
 
